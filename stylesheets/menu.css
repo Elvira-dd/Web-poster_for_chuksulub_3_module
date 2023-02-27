@@ -1,0 +1,37 @@
+/* ОБУЧЕНИЕ МЕНЮ */
+.menu_educ {
+    width: 80px;
+    height: 100vh ;
+    float: right;
+}
+.menu_block_active {
+    width: 80px;
+    height: 25vh;
+    background: #142F12 ;
+    border-right:  6px solid #B8EC49 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu_block_active_educ {
+    width: 80px;
+    height: 37vh;
+    background: #142F12 ;
+    border-right:  6px solid #B8EC49 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu_blocks {
+    display: block;
+    position: absolute;
+    right:0
+}
+.menu_block_disactive {
+    width: 80px;
+    height: 25vh;
+    border-right:  6px solid #B8EC49;
+}
+.menu_educ h2 {
+    transform: rotate(90deg);
+}

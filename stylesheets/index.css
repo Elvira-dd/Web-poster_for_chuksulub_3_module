@@ -1,0 +1,99 @@
+@import "font.css";
+@import "education_screen.css";
+body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #021A0C;
+}
+.screen {
+    padding: 75px 90px 75px 90px;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+.screen h1 {
+    text-align: center;
+}
+h1 + h2 {
+    text-align: center;
+}
+h1, h2 {
+    text-shadow: 0px 0px 14px #B8EC49;
+}
+.top_lines{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 10000;
+    overflow: hidden;
+    pointer-events: none;
+}
+.top_lines div {
+    width: 100%;
+    height:1vh;
+    background-color:#0A0A0A ;
+    opacity: .15;
+    margin-bottom: 1vh;
+}
+.top_img {
+    width: 40vw;
+    height: 40vw;
+    z-index:10000;
+    position: absolute;
+    margin-left: 30vw;
+    margin-top: calc((100vh - 40vw)/2);
+    pointer-events: none;
+}
+.screen_naming {
+    margin-bottom: 45px;
+}
+button {
+    background-color: #021A0C;
+    height: 62px;
+    width:100%;
+    border: 6px solid #021A0C ;
+    margin-top:32px;
+    display: inline-block;
+    cursor: pointer;
+}
+button:hover {
+    border: 6px solid #B8EC49 ;
+    background-color: #1C3816;
+}
+button  p {
+    margin-left: 10px;
+}
+::placeholder {
+    color: #6A922F ;
+}
+input[type="text"] {
+    width: calc(100% - 34px);
+    height: 52px ;
+    border: 6px solid #B8EC49 ;
+    background-color: #1C3816;
+    margin-top: 1.5vh;
+    font-size: 22px;
+    font-family:  'Press Start 2P', cursive;
+    padding-left: 20px;
+    color: #B8EC49;
+}
+input[type="text"]:focus {
+    outline: none;
+    color: #B8EC49;
+}
+
+#elementEl::after {
+    content: '|';
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
