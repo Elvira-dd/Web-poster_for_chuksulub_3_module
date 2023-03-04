@@ -15,7 +15,7 @@ body {
 .screen h1 {
     text-align: center;
 }
-h1 + h2 {
+.screen_naming {
     text-align: center;
 }
 h1, h2 {
@@ -56,19 +56,22 @@ button {
     margin-top:32px;
     display: inline-block;
     cursor: pointer;
+    padding-left: 10px;
 }
 button:hover {
     border: 6px solid #B8EC49 ;
     background-color: #1C3816;
 }
 button  p {
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-top: -23px ;
 }
 ::placeholder {
     color: #6A922F ;
 }
 input[type="text"] {
-    width: calc(100% - 34px);
+    visibility: hidden;
+    width: 0.1%;
     height: 52px ;
     border: 6px solid #B8EC49 ;
     background-color: #1C3816;
@@ -77,23 +80,17 @@ input[type="text"] {
     font-family:  'Press Start 2P', cursive;
     padding-left: 20px;
     color: #B8EC49;
+    animation: longer_input ;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
 }
 input[type="text"]:focus {
     outline: none;
     color: #B8EC49;
 }
-
-#elementEl::after {
-    content: '|';
-    margin-left: 5px;
-    animation: blink 0.7s infinite;
-  }
-  
-  @keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
+@keyframes longer_input {
+    0% {width: 0.1%}
+    50% {width:34%}
+    100% {width:calc(100% - 34px)}
+}
