@@ -18,7 +18,7 @@ body {
 .screen_naming {
     text-align: center;
 }
-h1, h2 {
+h1, h2,p {
     text-shadow: 0px 0px 14px #B8EC49;
 }
 .top_lines{
@@ -53,10 +53,13 @@ button {
     height: 62px;
     width:100%;
     border: 6px solid #021A0C ;
-    margin-top:32px;
+    margin-top:50px;
     display: inline-block;
     cursor: pointer;
     padding-left: 10px;
+}
+button + button {
+    margin-top: 5px;
 }
 button:hover {
     border: 6px solid #B8EC49 ;
@@ -93,4 +96,22 @@ input[type="text"]:focus {
     0% {width: 0.1%}
     50% {width:34%}
     100% {width:calc(100% - 34px)}
+}
+.tip { 
+    width: 40px;
+    height: 40px;
+    background-color: #B8EC49;
+    color: #021A0C;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 27px;
+    line-height: 29px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 2px;
+    box-shadow: 0px 0px 14px #B8EC49;;
+}
+.educ_pos {
+    margin-left: 63%;
+    margin-top:-4.5%
 }
