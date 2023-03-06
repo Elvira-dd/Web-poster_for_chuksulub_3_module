@@ -12,10 +12,11 @@ setTimeout( () => {document.getElementById("nextScreen").style.visibility="visib
 
 $("#nextScreen").click(function(){
   screen_educ_login_1.style.visibility = "hidden"
-  user_name.style.visibility = "hidden"
+  
   nextScreen.style.visibility = "hidden"
   nextScreen_p.style.visibility = "hidden"
   let userName = document.getElementById("user_name")
+  user_name.style.visibility = "hidden"
   let screenEduc = document.getElementById("screen_educ")
   let userNameValue = userName.value
     screenEduc.style.visibility = "hidden"
@@ -82,6 +83,25 @@ function imageAppear(image) {
 }
 
 //THIRD SCREEN WITH EDUCATION | YES | LOADER
+
+$("#screen_educ_buttonYes").click(function(){
+  document.getElementById("screen_educ_buttonNo").style.display = "none"
+  document.getElementById("screen_educ_buttonYes").style.display = "none"
+  document.getElementById("screen_naming_educ").style.display="none"
+    document.getElementById("screen_naming_educ_2").style.display="none"
+    document.getElementById("screen_naming_educ_3").style.display="none"
+    document.getElementById("screen_educ_2").style.display="none"
+    document.getElementById("screen_educ_2").style.visibility="hidden"
+    document.getElementById("education_full").style.position="absolute"
+    imageAppear(semmy_loader)
+    setTimeout(() => {document.getElementById("semmy_loader").src = "images/loading_semmy_2.png"},2000)
+    setTimeout(() => {document.getElementById("semmy_loader").src = "images/loading_semmy_3_6.png"},3000)
+    setTimeout(() => {document.getElementById("semmy_loader").src = "images/loading_semmy_4.png"},4000)
+    setTimeout(() => {document.getElementById("semmy_loader").src = "images/loading_semmy_5.png"},5000)
+    setTimeout(() => {document.getElementById("semmy_loader").src = "images/loading_semmy_3_6.png"},6000)
+    setTimeout(() => {document.getElementById("semmy_loader").src = "images/loading_semmy_7.png"},7000)
+})
+
 
 
 
