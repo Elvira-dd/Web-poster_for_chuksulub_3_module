@@ -1,5 +1,6 @@
 @import "font.css";
 @import "education_screen.css";
+@import "game.css";
 body {
     overflow: hidden;
     width: 100vw;
@@ -7,7 +8,7 @@ body {
     background-color: #021A0C;
 }
 .screen {
-    padding: 75px 90px 75px 90px;
+    padding: 55px 90px 55px 90px;
     display: flex;
     justify-content:center;
     flex-direction: column;
@@ -15,8 +16,10 @@ body {
 .screen h1 {
     text-align: center;
 }
-
-h1, h2,p {
+h1 + h2 {
+    text-align: center;
+}
+h1, h2,p,button {
     text-shadow: 0px 0px 14px #B8EC49;
 }
 .top_lines{
@@ -45,7 +48,7 @@ h1, h2,p {
 }
 button {
     background-color: #021A0C;
-    height: 62px;
+    height: 7vh;
     width:100%;
     border: 6px solid #021A0C ;
     margin-top:50px;
@@ -54,7 +57,7 @@ button {
     padding-left: 10px;
 }
 button + button {
-    margin-top: 5px;
+    margin-top: 0px;
 }
 button:hover {
     border: 6px solid #B8EC49 ;

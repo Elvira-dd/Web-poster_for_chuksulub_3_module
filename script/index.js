@@ -24,11 +24,11 @@ $("#nextScreen").click(function(){
     let output = ""
     if(userNameValue.length) {
     output = `<p id="elementEl" style="visibility:hidden";>Добро пожаловать, ${userNameValue}!
-     Теперь это ваше рабочее место. Сегодня ваша задача - пройти обучения, изучить механику работы и обработать 3 запроса с планет А-564, З-98 и О-09 
+     Теперь это ваше рабочее место. Сегодня ваши задачи - пройти обучение, изучить механику работы и обработать 3 запроса с планет А-564, З-98 и О-09 
     </p>`;  }
   else {
     output = `<p id="elementEl" style="visibility:hidden";>Добро пожаловать, человечек без имени!
-     Теперь это ваше рабочее место. Сегодня ваша задача - пройти обучения, изучить механику работы и обработать 3 запроса с планет А-564, З-98 и О-09 
+     Теперь это ваше рабочее место. Сегодня ваши задачи - пройти обучение, изучить механику работы и обработать 3 запроса с планет А-564, З-98 и О-09 
     </p>`; 
   }
     document.getElementById("second_educ_screen").innerHTML = output;
@@ -100,10 +100,8 @@ $("#screen_educ_buttonYes").click(function(){
     setTimeout(() => {document.getElementById("semmy_loader").src = "images/loading_semmy_5.png"},5000)
     setTimeout(() => {document.getElementById("semmy_loader").src = "images/loading_semmy_3_6.png"},6000)
     setTimeout(() => {document.getElementById("semmy_loader").src = "images/loading_semmy_7.png"},7000)
-    setTimeout(() => {document.getElementById("semmy_loader").style.visibility="hidden"},8000)
-    setTimeout(() => {document.getElementById("semmy_loader").style.position="absolute"},8000)
-    setTimeout(() => {document.getElementById("menu_block_active_educ").style.position="absolute"},8000)
-    setTimeout(() => {document.getElementById("menu_block_active_educ").style.visibility="hidden"},8000)
+    setTimeout(() => {document.getElementById("education").style.display="none"},8000)
+    setTimeout(() => {document.getElementById("education").style.position="absolute"},8000)
 })
 
 
