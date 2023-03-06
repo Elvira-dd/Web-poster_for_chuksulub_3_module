@@ -100,6 +100,10 @@ $("#screen_educ_buttonYes").click(function(){
     setTimeout(() => {document.getElementById("semmy_loader").src = "images/loading_semmy_5.png"},5000)
     setTimeout(() => {document.getElementById("semmy_loader").src = "images/loading_semmy_3_6.png"},6000)
     setTimeout(() => {document.getElementById("semmy_loader").src = "images/loading_semmy_7.png"},7000)
+    setTimeout(() => {document.getElementById("semmy_loader").style.visibility="hidden"},8000)
+    setTimeout(() => {document.getElementById("semmy_loader").style.position="absolute"},8000)
+    setTimeout(() => {document.getElementById("menu_block_active_educ").style.position="absolute"},8000)
+    setTimeout(() => {document.getElementById("menu_block_active_educ").style.visibility="hidden"},8000)
 })
 
 

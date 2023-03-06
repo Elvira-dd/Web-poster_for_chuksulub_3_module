@@ -69,7 +69,7 @@ button  p {
 }
 input[type="text"] {
     visibility: hidden;
-    width: 100%;
+    width: calc(100% - 30px);
     height: 52px ;
     border: 6px solid #B8EC49 ;
     background-color: #1C3816;
