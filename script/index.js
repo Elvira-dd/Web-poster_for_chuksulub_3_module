@@ -1,11 +1,10 @@
 //FIRST SCREEN WITH EDUCATION
 
-
 typeWriter(screen_naming_educ)
 setTimeout( () => {typeWriter(screen_naming_educ_2)}, 1000)
 setTimeout( () => {typeWriter(screen_naming_educ_3)}, 2500)
 setTimeout( () => {typeWriter(screen_educ_login_1)}, 3500)
-setTimeout( () => {document.getElementById("user_name").style.visibility="visible"}, 4500)
+setTimeout( () => {imageAppear(user_name)}, 4500)
 setTimeout(() =>{typeWriter(nextScreen_p)},5500)
 setTimeout( () => {document.getElementById("nextScreen").style.visibility="visible"}, 5500)
 
@@ -66,21 +65,23 @@ $("#screen_educ_buttonNo").click(function(){
     document.getElementById("screen_educ_2").style.visibility="hidden"
     typeWriter(fail_screen_joke_text_1)
   },9000)
-  setTimeout(() => {typeWriter(fail_screen_joke_2)},9500)
+  setTimeout(() => {
+    typeWriter(fail_screen_joke_2)
+  },9500)
   setTimeout(() => {typeWriter(fail_screen_joke_3)},10500)
   setTimeout(() => {typeWriter(fail_screen_joke_4)},11000)
   setTimeout(() => {imageAppear(fail_screen_joke_sad_semmy)},11000)
 })
 
 function imageAppear(image) {
-  document.getElementById("fail_screen_joke_sad_semmy").style.visibility="visible"
-  setTimeout(() => { document.getElementById("fail_screen_joke_sad_semmy").style.visibility="hidden" },250)
-  setTimeout(() => { document.getElementById("fail_screen_joke_sad_semmy").style.visibility="visible" },500)
-  setTimeout(() => { document.getElementById("fail_screen_joke_sad_semmy").style.visibility="hidden" },1000)
-  setTimeout(() => { document.getElementById("fail_screen_joke_sad_semmy").style.visibility="visible" },1500)
+  image.style.visibility="visible"
+  setTimeout(() => { image.style.visibility="hidden" },250)
+  setTimeout(() => { image.style.visibility="visible" },500)
+  setTimeout(() => { image.style.visibility="hidden" },1000)
+  setTimeout(() => { image.style.visibility="visible" },1500)
 }
 
-//THIRD SCREEN WITH EDUCATION | YES
+//THIRD SCREEN WITH EDUCATION | YES | LOADER
 
 
 
