@@ -10,12 +10,14 @@ body {
 .screen {
     padding: 55px 90px 55px 90px;
     display: flex;
-    justify-content:center;
+    justify-content:flex-start;
     flex-direction: column;
+    position: relative;
+    height: calc(100vh - 110px);
 }
 .screen h1 {
     text-align: center;
-}
+}   
 h1 + h2 {
     text-align: center;
 }
@@ -91,16 +93,18 @@ input[type="text"]:focus {
     color: #B8EC49;
 }
 .tip { 
-    width: 40px;
-    height: 40px;
+    position: relative;
+    width: 3vh;
+    height: 3vh;
     background-color: #B8EC49;
     color: #021A0C;
     font-family: 'Press Start 2P', cursive;
-    font-size: 27px;
-    line-height: 29px;
+    font-size: 2.4vh;
+    line-height: 2.5vh;
     justify-content: center;
     align-items: center;
     display: flex;
     padding-left: 2px;
+    padding-top: 2px;
     box-shadow: 0px 0px 14px #B8EC49;;
 }
