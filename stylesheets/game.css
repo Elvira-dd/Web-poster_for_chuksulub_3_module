@@ -87,7 +87,15 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding: 20px;
+    padding:  20px;
+    background-color: #021A0C;
+    width:100%;
+    border: 6px solid #021A0C ;
+    margin-bottom: 5px;
+}
+.group_button:hover {
+    border: 6px solid #B8EC49 ;
+    background-color: #1C3816;
 }
 .group_button p {
     margin-top: 0px;
@@ -103,4 +111,14 @@
 }
 .groups_buttons {
     width: 50%;
+}
+.active_group_div {
+    border: 6px solid #B8EC49 ;
+    background-color: #1C3816;
+}
+.crossed_line_button {
+    height: 0.5vh;
+    width: 100%;
+    background-color: #93C23D;
+    margin-top: -4vh;
 }

@@ -86,7 +86,7 @@
             <div class="screen_educ" id="screen_educ">
                 <p id="screen_educ_login_1" style="visibility: hidden;">Введите ваш логин</p>
                 <input type="text" placeholder="Алекс" id="user_name"/>
-                <button type="button" id="nextScreen" style="visibility: hidden;">><p id="nextScreen_p" style="visibility: hidden;">Подтвердить</p> </button>
+                <button type="button" id="nextScreen" style="visibility: hidden; margin-top: 50px;">><p id="nextScreen_p" style="visibility: hidden;">Подтвердить</p> </button>
             </div>
             <div id="screen_educ_2">
                 <div id="second_educ_screen">
@@ -167,7 +167,7 @@
 &mdash;&nbsp;Наличие неестественной активности центральной звезды
                             </p>
                             <p class="condition_text text">Группа спасения
-                                Первый критерий отбора
+ Первый критерий отбора
                                 Второй критерий отбора
                                 Третий критерий отбора с разными вариантамиесли что-то одно, то используем такую штуку если другое условие то применяем другие 
                                 
@@ -254,91 +254,109 @@
                         <div id="groups_buttons" class="groups_buttons">
                             <button type="button" id="safety_group_button" class="group_button" style="margin-top: 0px;">
                                 <div style="display: flex; align-items: center;">
-                                    <div class="groups_buttons_selector" id="groups_buttons_selector"></div>
+                                    <div class="groups_buttons_selector" id="groups_buttons_selector_1"></div>
                                 <p>Группа спасения</p>
+                                </div>
+                                <p>х2</p>
+                            </button>
+
+                            <div style="margin-bottom: 25px;">
+                                <button type="button"  class="group_button" style="border:0px; background-color: #021A0C ; padding-left: 26px;">
+                                    <div style="display: flex; align-items: center;">
+                                        <div class="groups_buttons_selector" id="groups_buttons_selector" style="background-color: #93C23D; border:6px solid #93C23D"></div>
+                                    <p style="color: #93C23D;">Группа волонтеров</p>
+                                    </div>
+                                    <p></p>
+                                </button>
+                                <div class="crossed_line_button"></div>
+                            </div>
+                        
+                            <button type="button" id="tech_group_button" class="group_button">
+                                <div style="display: flex; align-items: center;">
+                                    <div class="groups_buttons_selector" id="groups_buttons_selector"></div>
+                                <p>Техническая группа</p>
+                                </div>
+                                <p>х1</p>
+                            </button>
+
+                            <button type="button" id="evoq_group_button" class="group_button">
+                                <div style="display: flex; align-items: center;">
+                                    <div class="groups_buttons_selector" id="groups_buttons_selector"></div>
+                                <p>Группа временной эвакуации</p>
+                                </div>
+                                <p>х1</p>
+                            </button>
+
+                            <button type="button" id="gum_base_button" class="group_button">
+                                <div style="display: flex; align-items: center;">
+                                    <div class="groups_buttons_selector" id="groups_buttons_selector"></div>
+                                <p>Базовая гум.помощь</p>
+                                </div>
+                                <p>х7</p>
+                            </button>
+
+                            <button type="button" id="gum_winter_button" class="group_button">
+                                <div style="display: flex; align-items: center;">
+                                    <div class="groups_buttons_selector" id="groups_buttons_selector"></div>
+                                <p>Зимняя гум.помощь</p>
+                                </div>
+                                <p>х2</p>
+                            </button>
+
+                            <button type="button" id="gum_fire_button" class="group_button">
+                                <div style="display: flex; align-items: center;">
+                                    <div class="groups_buttons_selector" id="groups_buttons_selector"></div>
+                                <p>Огнестойкая гум.помощь</p>
                                 </div>
                                 <p>х3</p>
                             </button>
 
-                            <button type="button" id="safety_group_button" class="group_button">
-                                <div style="display: flex; align-items: center;">
-                                    <div class="groups_buttons_selector" id="groups_buttons_selector"></div>
-                                <p>Группа спасения</p>
-                                </div>
-                                <p>х3</p>
-                            </button>
-
-                            <button type="button" id="safety_group_button" class="group_button">
-                                <div style="display: flex; align-items: center;">
-                                    <div class="groups_buttons_selector" id="groups_buttons_selector"></div>
-                                <p>Группа спасения</p>
-                                </div>
-                                <p>х3</p>
-                            </button>
-
-                            <button type="button" id="safety_group_button" class="group_button">
-                                <div style="display: flex; align-items: center;">
-                                    <div class="groups_buttons_selector" id="groups_buttons_selector"></div>
-                                <p>Группа спасения</p>
-                                </div>
-                                <p>х3</p>
-                            </button>
-
-                            <button type="button" id="safety_group_button" class="group_button">
-                                <div style="display: flex; align-items: center;">
-                                    <div class="groups_buttons_selector" id="groups_buttons_selector"></div>
-                                <p>Группа спасения</p>
-                                </div>
-                                <p>х3</p>
-                            </button>
-
-                            <button type="button" id="safety_group_button" class="group_button">
-                                <div style="display: flex; align-items: center;">
-                                    <div class="groups_buttons_selector" id="groups_buttons_selector"></div>
-                                <p>Группа спасения</p>
-                                </div>
-                                <p>х3</p>
-                            </button>
-
-                            <button type="button" id="safety_group_button" class="group_button">
-                                <div style="display: flex; align-items: center;">
-                                    <div class="groups_buttons_selector" id="groups_buttons_selector"></div>
-                                <p>Группа спасения</p>
-                                </div>
-                                <p>х3</p>
-                            </button>
+                            
                         </div>
-                        <div style="width:40%; display: flex; justify-content: center;"  >
-                            <img src="images/group_safety.png" alt="" style="height:48vh ;">
+                        <div style="width:40%; display: flex; justify-content: center;
+                        align-items: center;"  >
+                            <img src="images/group_safety.png" alt="" style="height:51vh ;">
                         </div>
                         
                     </div>
-                    <div id="group_text">
+                    <div id="groups_text" style="visibility: hidden;">
                         <h2 style="margin-top:2vh; margin-bottom: 1vh;">---------------------------------------------------------</h2>
                         <div style="display:flex;">
-                            <h2 id="group_text_name_prev"><</h2>
-                            <h2 style="margin-left: 15px; margin-right: 15px;">Группа спасения №56 </h2>
+                            <h2 id="group_text_name_prev" style="opacity:.4 ;"><</h2>
+                            <h2 id="group_text_name"  style="margin-left: 15px; margin-right: 15px;">Группа спасения №56 </h2>
                             <h2 id="group_text_name_next">></h2>
                         </div>
-                        <p class="text" style="width:96%; margin-left: 4%; height:16vh ; overflow: auto;"> 
+                        <div class="text" style="width:96%; margin-left: 3%; height:15vh ; overflow: auto;" id="group_main_text">
+                            <p id="group_main_text_1"> 
                             Состав: Анджена (678_АЛ),Верон (8009_АН),
-Принал (453_АП),Ян (7764_АА) <br> <br>
-
+Принал (453_АП),Ян (7764_АА) </p>
+ <br> <br>
+<p id="group_main_text_2">
 Область работ: планеты с низкими температурами, ураганами, песчаными бурями; помощь в строительстве подземных жилых комплексов
+</p>
  <br> <br>
-Ближайшая свободная дата: 27.06.45
+ <p id="group_main_text_3">
+    Ближайшая свободная дата: 27.06.45
+ </p>
  <br> <br>
-Последний отчет операции: 
+ <p id="group_main_text_4">
+Отчет последней операции: 
+Вывезено 89 человек из воздушного саркофага №8 на планете О-98 во время песчаного урагана 11 баллов.
 
                             </p>
+                        </div>
+                        
+                    </div>
+                    <div id="boxes_text" style="visibility: hidden;">
+                        <h2>Базовая гуманитарная помощь</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui tempora dignissimos laborum! Minima atque fugit eligendi ad sunt at ut. Exercitationem, mollitia vitae ea quae dolorem incidunt recusandae pariatur minus.</p>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
     <script defer src="script/index.js"></script>
-    <script defer src="script/game.js"></script>
+    <script defer src="script/game_1.js"></script>
+    <script defer src="script/game_2.js"></script>
     <script src="script/jquery-3.6.3.js"></script>
 </body>
 </html>

@@ -6,6 +6,10 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #021A0C;
+    cursor: url("../images/cursor.png"), auto
+}
+.button:active {
+    cursor: url(../images/cursor_active.png), auto
 }
 .screen {
     padding: 55px 90px 55px 90px;
@@ -53,7 +57,6 @@ button {
     height: 7vh;
     width:100%;
     border: 6px solid #021A0C ;
-    margin-top:50px;
     display: inline-block;
     cursor: pointer;
     padding-left: 10px;
@@ -64,6 +67,7 @@ button + button {
 button:hover {
     border: 6px solid #B8EC49 ;
     background-color: #1C3816;
+    cursor: url(../images/cursor_active.png), auto
 }
 button  p {
     margin-left: 30px;

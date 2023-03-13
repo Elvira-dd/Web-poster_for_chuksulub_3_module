@@ -1,12 +1,12 @@
 //FIRST SCREEN WITH EDUCATION
 
-// typeWriter(screen_naming_educ)
-// setTimeout( () => {typeWriter(screen_naming_educ_2)}, 1000)
-// setTimeout( () => {typeWriter(screen_naming_educ_3)}, 2500)
-// setTimeout( () => {typeWriter(screen_educ_login_1)}, 3500)
-// setTimeout( () => {imageAppear(user_name)}, 4500)
-// setTimeout(() =>{typeWriter(nextScreen_p)},5500)
-// setTimeout( () => {document.getElementById("nextScreen").style.visibility="visible"}, 5500)
+typeWriter(screen_naming_educ)
+setTimeout( () => {typeWriter(screen_naming_educ_2)}, 1000)
+setTimeout( () => {typeWriter(screen_naming_educ_3)}, 2500)
+setTimeout( () => {typeWriter(screen_educ_login_1)}, 3500)
+setTimeout( () => {imageAppear(user_name)}, 4500)
+setTimeout(() =>{typeWriter(nextScreen_p)},5500)
+setTimeout( () => {document.getElementById("nextScreen").style.visibility="visible"}, 5500)
 
 //SECOND SCREEN WITH EDUCATION
 
