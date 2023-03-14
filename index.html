@@ -386,7 +386,7 @@
                 <div style="display: flex; align-items: center">
                   <div
                     class="groups_buttons_selector"
-                    id="groups_buttons_selector"
+                    id="groups_buttons_selector_3"
                   ></div>
                   <p>Техническая группа</p>
                 </div>
@@ -397,7 +397,7 @@
                 <div style="display: flex; align-items: center">
                   <div
                     class="groups_buttons_selector"
-                    id="groups_buttons_selector"
+                    id="groups_buttons_selector_4"
                   ></div>
                   <p>Группа временной эвакуации</p>
                 </div>
@@ -408,7 +408,7 @@
                 <div style="display: flex; align-items: center">
                   <div
                     class="groups_buttons_selector"
-                    id="groups_buttons_selector"
+                    id="groups_buttons_selector_5"
                   ></div>
                   <p>Базовая гум.помощь</p>
                 </div>
@@ -419,7 +419,7 @@
                 <div style="display: flex; align-items: center">
                   <div
                     class="groups_buttons_selector"
-                    id="groups_buttons_selector"
+                    id="groups_buttons_selector_6"
                   ></div>
                   <p>Зимняя гум.помощь</p>
                 </div>
@@ -430,7 +430,7 @@
                 <div style="display: flex; align-items: center">
                   <div
                     class="groups_buttons_selector"
-                    id="groups_buttons_selector"
+                    id="groups_buttons_selector_7"
                   ></div>
                   <p>Огнестойкая гум.помощь</p>
                 </div>
@@ -443,9 +443,15 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin-right: 3%;
               "
             >
-              <img src="images/group_safety.png" alt="" style="height: 51vh" />
+              <img
+                src="images/group_safety.png"
+                alt=""
+                style="height: 51vh"
+                id="group_screen_img"
+              />
             </div>
           </div>
           <div id="groups_text" style="visibility: hidden">
@@ -491,13 +497,25 @@
             </div>
           </div>
           <div id="boxes_text" style="visibility: hidden">
-            <h2>Базовая гуманитарная помощь</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
-              tempora dignissimos laborum! Minima atque fugit eligendi ad sunt
-              at ut. Exercitationem, mollitia vitae ea quae dolorem incidunt
-              recusandae pariatur minus.
-            </p>
+            <h2 style="margin-top: 2vh; margin-bottom: 1vh">
+              ---------------------------------------------------------
+            </h2>
+            <h2 id="boxes_text_1">Базовая гуманитарная помощь</h2>
+            <div class="text" style="width: 100%; height: 15vh; overflow: auto">
+              <p id="boxes_text_2">
+                Рассчитывается на каждого человека из запроса. Если точное
+                количество коробок гуманитарной помощи не известно, то вы можете
+                перенаправить запрос или отправить иную помощь
+              </p>
+              <br />
+              <br />
+              <p id="boxes_text_3">
+                Состав: сухое горючее, спички, медицинские жгуты, марлевые
+                бинты, йод, кровоостанавливающие, аспирин, влажные салфетки,
+                термобелье, рюкзак, спальный мешок, быстрорастворимая каша,
+                шоколад, консервы, сухофрукты, Фильтр для очистки воды
+              </p>
+            </div>
           </div>
         </div>
       </div>

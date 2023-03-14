@@ -1,5 +1,7 @@
 // УСЛОВИЯ
 $("#screen_condition").click(function () {
+  $("#screen_naming_2_1").css("visibility", "hidden");
+  $("#screen_naming_2_1").css("position", "absolute");
   $("#screen_planet").removeClass("active");
   $("#screen_resque").removeClass("active");
   $("#screen_group").removeClass("active");
@@ -33,6 +35,8 @@ $("#screen_condition").click(function () {
 
 // ЗАПРОС
 $("#screen_resque").click(function () {
+  $("#screen_naming_2_1").css("visibility", "hidden");
+  $("#screen_naming_2_1").css("position", "absolute");
   $("#screen_planet").removeClass("active");
   $("#screen_condition").removeClass("active");
   $("#screen_group").removeClass("active");
@@ -67,6 +71,8 @@ $("#screen_resque").click(function () {
 
 // ПЛАНЕТА
 $("#screen_planet").click(function () {
+  $("#screen_naming_2_1").css("visibility", "hidden");
+  $("#screen_naming_2_1").css("position", "absolute");
   $("#screen_resque").removeClass("active");
   $("#screen_condition").removeClass("active");
   $("#screen_group").removeClass("active");
@@ -100,6 +106,8 @@ $("#screen_planet").click(function () {
 
 // ГРУППЫ
 $("#screen_group").click(function () {
+  $("#screen_naming_2_1").css("visibility", "visible");
+  $("#screen_naming_2_1").css("position", "relative");
   $("#screen_resque").removeClass("active");
   $("#screen_condition").removeClass("active");
   $("#screen_planet").removeClass("active");
@@ -135,10 +143,14 @@ $("#screen_group").click(function () {
 // ВЫБОР ГРУППЫ
 // Группы спасения
 $("#safety_group_button").click(function () {
-  $(".group_button").removeClass(".active_group_div");
+  $("#group_screen_img").attr("src", "images/group_safety.png");
+  $("#group_text_name_next").css("opacity", "1");
+  $(".group_button").removeClass("active_group_div");
   $("#safety_group_button").addClass("active_group_div");
+  $(".groups_buttons_selector").removeClass("active_selector");
   $("#groups_buttons_selector_1").addClass("active_selector");
   $("#groups_text").css("visibility", "visible");
+  $("#boxes_text").css("visibility", "hidden");
   $("#group_text_name").text("Группа спасения №56");
   $("#group_main_text_1").text(
     `Состав: Анджена (678_АЛ),Верон (8009_АН),Принал (453_АП),Ян (7764_АА)`
@@ -153,19 +165,21 @@ $("#safety_group_button").click(function () {
 });
 //Выбор группа спасение
 $("#group_text_name_next").click(function () {
-  $("#group_text_name_prev").css("opacity", "1");
-  $("#group_text_name_next").css("opacity", ".4");
-  $("#group_text_name").text(`Группа спасения №99`);
-  $("#group_main_text_1").text(`Состав: Лидия(6098_АЛ),Александр (8029_АО),
-    Рюк(4973_АЛ),Озвольд (823_АО), котик Искорка (002_АК)
-    `);
-  $("#group_main_text_2").text(
-    `Область работ: экстренные ситуации с землетрясениями, разгребание завалов с поиском людей `
-  );
-  $("#group_main_text_3").text(`Ближайшая свободная дата: 20.06.45 `);
-  $("#group_main_text_4").text(`Отчет последней операции:
-    Найдено 12 человек с помощью разведывательного котика после 8 бального землетрясения
-    `);
+  if ($("#group_text_name_next").css("opacity") == 1) {
+    $("#group_text_name_prev").css("opacity", "1");
+    $("#group_text_name_next").css("opacity", ".4");
+    $("#group_text_name").text(`Группа спасения №99`);
+    $("#group_main_text_1").text(`Состав: Лидия(6098_АЛ),Александр (8029_АО),
+      Рюк(4973_АЛ),Озвольд (823_АО), котик Искорка (002_АК)
+      `);
+    $("#group_main_text_2").text(
+      `Область работ: экстренные ситуации с землетрясениями, разгребание завалов с поиском людей `
+    );
+    $("#group_main_text_3").text(`Ближайшая свободная дата: 20.06.45 `);
+    $("#group_main_text_4").text(`Отчет последней операции:
+      Найдено 12 человек с помощью разведывательного котика после 8 бального землетрясения
+      `);
+  }
 });
 $("#group_text_name_prev").click(function () {
   if ($("#group_text_name_prev").css("opacity") == 1) {
@@ -185,12 +199,107 @@ $("#group_text_name_prev").click(function () {
   }
 });
 //Техническая группа
-
+$("#tech_group_button").click(function () {
+  $("#group_screen_img").attr("src", "images/group_safety.png");
+  $(".group_button").removeClass("active_group_div");
+  $("#tech_group_button").addClass("active_group_div");
+  $(".groups_buttons_selector").removeClass("active_selector");
+  $("#groups_buttons_selector_3").addClass("active_selector");
+  $("#groups_text").css("visibility", "visible");
+  $("#boxes_text").css("visibility", "hidden");
+  $("#group_text_name").text("Техническая группа №А5");
+  $("#group_main_text_1").text(
+    `Состав: Регина (69_АО), Максим (000_АЛ), Рам (421_АЛ)
+    `
+  );
+  $("#group_main_text_2").text(
+    `Область работ: массовые сбои электричества, восстановление работы атомных станций `
+  );
+  $("#group_main_text_3").text(`Ближайшая свободная дата: 22.06.45`);
+  $("#group_main_text_4").text(
+    `Отчет последней операции: Восстановление работы атомного ледокола за 2 часа `
+  );
+  $("#group_text_name_next").css("opacity", ".4");
+});
 //Группа временной эвакуации
-
+$("#evoq_group_button").click(function () {
+  $("#group_screen_img").attr("src", "images/group_safety.png");
+  $(".group_button").removeClass("active_group_div");
+  $("#evoq_group_button").addClass("active_group_div");
+  $(".groups_buttons_selector").removeClass("active_selector");
+  $("#groups_buttons_selector_4").addClass("active_selector");
+  $("#groups_text").css("visibility", "visible");
+  $("#boxes_text").css("visibility", "hidden");
+  $("#group_text_name").text("Группа временной эвакуации №44");
+  $("#group_main_text_1").text(
+    `Состав: Ливера(55_АЛ), Ричард(02_АО), Перер(991_АО), Екатерина (98_ЛЛ), 5 волонтеров`
+  );
+  $("#group_main_text_2").text(`Область работ: Планеты срочной помощи `);
+  $("#group_main_text_3").text(`Ближайшая свободная дата: сегодня`);
+  $("#group_main_text_4").text(
+    `Отчет последней операции:
+    Эвакуация 5000 жителей города Перор(планета Р-987) за 4 часа. Выживаемость граждан города 99% `
+  );
+  $("#group_text_name_next").css("opacity", ".4");
+});
 //ВЫБОР ГУМ,ПОМОЩИ
 //Базовая
-$("#gum_group_button");
+$("#gum_base_button").click(function () {
+  $("#group_screen_img").attr("src", "images/boxes.png");
+  $(".group_button").removeClass("active_group_div");
+  $("#gum_base_button").addClass("active_group_div");
+  $(".groups_buttons_selector").removeClass("active_selector");
+  $("#groups_buttons_selector_5").addClass("active_selector");
+  $("#groups_text").css("visibility", "hidden");
+  $("#groups_text").css("position", "absolute");
+  $("#boxes_text").css("visibility", "visible");
+  $("#boxes_text_1").text("Базовая гуманитарная помощь");
+  $("#boxes_text_2").text(
+    `Рассчитывается на каждого человека из запроса. Если точное
+    количество коробок гуманитарной помощи не известно, то вы можете
+    перенаправить запрос или отправить иную помощь`
+  );
+  $("#boxes_text_3").text(
+    `Состав: сухое горючее, спички, медицинские жгуты, марлевые бинты, йод, кровоостанавливающие, аспирин, влажные салфетки, термобелье, рюкзак, спальный мешок, быстрорастворимая каша, шоколад, консервы, сухофрукты, Фильтр для очистки воды`
+  );
+});
 //Зимняя
-
+$("#gum_winter_button").click(function () {
+  $("#group_screen_img").attr("src", "images/boxes.png");
+  $(".group_button").removeClass("active_group_div");
+  $("#gum_winter_button").addClass("active_group_div");
+  $(".groups_buttons_selector").removeClass("active_selector");
+  $("#groups_buttons_selector_6").addClass("active_selector");
+  $("#groups_text").css("visibility", "hidden");
+  $("#groups_text").css("position", "absolute");
+  $("#boxes_text").css("visibility", "visible");
+  $("#boxes_text_1").text("Зимняя гуманитарная помощь");
+  $("#boxes_text_2").text(
+    `Рассчитывается на каждого человека из запроса. Если точное
+    количество коробок гуманитарной помощи не известно, то вы можете
+    перенаправить запрос или отправить иную помощь`
+  );
+  $("#boxes_text_3").text(
+    `Состав: сухое горючее,дровяная микропечь, куртка, зимнии штаны, теплые ботинки,грелка для рук, спички, медицинские жгуты, марлевые бинты, йод, кровоостанавливающие, аспирин, влажные салфетки, термобелье, рюкзак, спальный мешок (выдержиающий до -30), быстрорастворимая каша, шоколад, консервы, сухофрукты, Фильтр для очистки воды`
+  );
+});
 //Огнестойкая
+$("#gum_fire_button").click(function () {
+  $("#group_screen_img").attr("src", "images/boxes.png");
+  $(".group_button").removeClass("active_group_div");
+  $("#gum_fire_button").addClass("active_group_div");
+  $(".groups_buttons_selector").removeClass("active_selector");
+  $("#groups_buttons_selector_7").addClass("active_selector");
+  $("#groups_text").css("visibility", "hidden");
+  $("#groups_text").css("position", "absolute");
+  $("#boxes_text").css("visibility", "visible");
+  $("#boxes_text_1").text("Огнестойкая гуманитарная помощь");
+  $("#boxes_text_2").text(
+    `Рассчитывается на каждого человека из запроса. Если точное
+    количество коробок гуманитарной помощи не известно, то вы можете
+    перенаправить запрос или отправить иную помощь`
+  );
+  $("#boxes_text_3").text(
+    `Состав: сухое горючее,спички, медицинские жгуты, марлевые бинты, йод, кровоостанавливающие, аспирин, влажные салфетки, рюкзак, спальный мешок с охлаждением, быстрорастворимая каша, шоколад, консервы, сухофрукты, фильтр для очистки воды, системы охлаждения воды, тканевый тент для создания totalblack тени, охлаждающие подушки, ледяные вентиляторы`
+  );
+});
