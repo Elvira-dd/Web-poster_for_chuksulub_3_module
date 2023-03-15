@@ -123,27 +123,40 @@
     <!-- GAME SCREENS -->
 
     <div id="game">
-      <div class="menu_game">
+      <div class="menu_game hidden_tool">
         <div class="menu_block" id="screen_condition"><p>УСЛОВИЯ</p></div>
         <div class="menu_block active" id="screen_resque"><p>ЗАПРОС</p></div>
         <div class="menu_block" id="screen_planet"><p>ПЛАНЕТА</p></div>
         <div class="menu_block" id="screen_group"><p>ГРУППЫ</p></div>
       </div>
       <div class="screen">
-        <h2 id="screen_naming_2_1"></h2>
-        <h1 id="screen_naming_1_2">ЗАПРОС №1</h1>
-        <h2 id="screen_naming_2_3">ГУМАНИТАРНАЯ ПОМОЩЬ</h2>
+        <div class="hidden_tool tooltip_1_1">
+          <h2 id="screen_naming_2_1"></h2>
+          <h1 id="screen_naming_1_2">ЗАПРОС №1</h1>
+          <h2 id="screen_naming_2_3">ГУМАНИТАРНАЯ ПОМОЩЬ</h2>
+        </div>
         <div class="second_part_screen" id="resque_screen">
           <div>
-            <h2>ТЕКСТ ОБРАЩЕНИЯ</h2>
+            <div
+              class="tip_boxes tooltip_1"
+              id="resque_screen_tip_box_1"
+              style="margin-top: 30vh; visibility: hidden"
+            >
+              <p>
+                Исходя из информации, предоставленной запросом, сделайте вывод о
+                состоянии планеты и о необходимости в помощи
+              </p>
+              <img src="images/close.svg" alt="" class="closing_tip" />
+            </div>
+            <h2 class="tooltip_1 hidden_tool">ТЕКСТ ОБРАЩЕНИЯ</h2>
             <div
               id="resque_screen_tip_1"
-              class="tip"
+              class="tip hidden_tool tooltip_1"
               style="margin-left: 46vh; margin-top: -5vh"
             >
               ?
             </div>
-            <p>
+            <p class="tooltip_1 hidden_tool">
               Здравствуйте, просим вас прислать дополнительную зимнюю
               гуманитарную помощь в 7 район. За последнюю неделю средняя дневная
               температура опустилась ниже 0 градусов. Также направили записи о
@@ -153,22 +166,32 @@
             <br />
             <br />
             <br />
-            <h2 style="display: flex; flex-direction: row">
+            <h2
+              style="display: flex; flex-direction: row"
+              class="hidden_tool tooltip_1"
+            >
               ПРИЛОЖЕНИЕ:
-              <p style="margin-top: 0px">month_temp.xls</p>
+              <p class="tooltip_1 hidden_tool" style="margin-top: 0px">
+                month_temp.xls
+              </p>
             </h2>
+          </div>
+          <div
+            class="tip_boxes"
+            id="resque_screen_tip_box_2"
+            style="margin-top: -15vh; visibility: hidden"
+          >
+            <p>
+              Варианты решений для вашей задачи. Исходя из критериев, выберете
+              лучшее решение для ситуации Есть несколько базовых ответов, а
+              также возможность перенаправить запрос в другой отдел для
+              дальнейшего рассмотрения, если ситуация неоднозначная
+            </p>
+            <img src="images/close.svg" alt="" class="closing_tip" />
+          </div>
+          <div id="resque_buttons" class="resque_buttons hidden_tool tooltip_2">
             <div
               id="resque_screen_tip_2"
-              class="tip"
-              style="margin-left: 70vh; margin-top: -5vh"
-            >
-              ?
-            </div>
-          </div>
-
-          <div id="resque_buttons" class="resque_buttons">
-            <div
-              id="resque_screen_tip_3"
               class="tip"
               style="left: calc(100% - 3vh); position: relative"
             >
@@ -203,7 +226,19 @@
           >
             ?
           </div>
-          <div class="two_condition_texts">
+          <div
+            class="tip_boxes tooltip_1"
+            id="condition_screen_tip_box_1"
+            style="margin-top: 0vh; visibility: hidden; width: calc(100% - 4vw)"
+          >
+            <p>
+              Критерии для выбора дальнейших действий по запросу. Не соблюдение
+              требований возможно только при сложной или неоднозначной ситуации
+              о которой также стоит сообщить в главный отдел.
+            </p>
+            <img src="images/close.svg" alt="" class="closing_tip" />
+          </div>
+          <div class="two_condition_texts hidden_tool">
             <p class="condition_text text">
               Базовая гум.помощь <br />
               &mdash;&nbsp;Уровень поражения катастроф выше среднего <br />
@@ -246,7 +281,22 @@
           >
             ?
           </div>
-          <div style="display: flex; justify-content: space-between">
+          <div
+            class="tip_boxes tooltip_1"
+            id="planet_screen_tip_box_1"
+            style="margin-top: 0vh; visibility: hidden; width: calc(100% - 4vw)"
+          >
+            <p>
+              Базовая информация о планете и последних катастрофах на ней. При
+              необходимости дополнительных данных отправьте запрос в главный
+              офис
+            </p>
+            <img src="images/close.svg" alt="" class="closing_tip" />
+          </div>
+          <div
+            style="display: flex; justify-content: space-between"
+            class="hidden_tool"
+          >
             <div class="planet_div">
               <img src="images/planet_1.png" alt="" class="planet" />
             </div>
@@ -328,28 +378,10 @@
                 </div>
               </div>
             </div>
-            <div
-              id="planet_screen_tip_2"
-              class="tip"
-              style="margin-left: -3vw; margin-top: 31vh; position: relative"
-            >
-              ?
-            </div>
           </div>
-          <div style="margin-top: 3vh">
+          <div style="margin-top: 3vh" class="hidden_tool">
             <h2>---------------------------------------------------------</h2>
             <h2 style="text-align: left">ПОСЛЕДНИЕ КАТАСТРОФЫ</h2>
-            <div
-              id="planet_screen_tip_3"
-              class="tip"
-              style="
-                margin-left: calc(100% - 3vh);
-                margin-top: -3vh;
-                position: relative;
-              "
-            >
-              ?
-            </div>
             <p class="text" style="width: 100%; height: 15vh; overflow: auto">
               <26.04.45> <br />
               Землетрясение в трех центральных районах
@@ -477,13 +509,6 @@
               </button>
             </div>
             <div
-              id="group_screen_tip_2"
-              class="tip"
-              style="margin-left: 50%; margin-top: -1"
-            >
-              ?
-            </div>
-            <div
               style="
                 width: 40%;
                 display: flex;
@@ -504,13 +529,6 @@
             <h2 style="margin-top: 2vh; margin-bottom: 1vh">
               ---------------------------------------------------------
             </h2>
-            <div
-              id="group_screen_tip_3"
-              class="tip"
-              style="margin-left: calc(100% - 3vh); margin-top: -1vh"
-            >
-              ?
-            </div>
             <div style="display: flex">
               <h2 id="group_text_name_prev" style="opacity: 0.4"><</h2>
               <h2
@@ -554,13 +572,6 @@
               ---------------------------------------------------------
             </h2>
             <h2 id="boxes_text_1">Базовая гуманитарная помощь</h2>
-            <div
-              id="group_screen_tip_3"
-              class="tip"
-              style="margin-left: calc(100% - 3vh); margin-top: -4vh"
-            >
-              ?
-            </div>
             <div class="text" style="width: 100%; height: 15vh; overflow: auto">
               <p id="boxes_text_2">
                 Рассчитывается на каждого человека из запроса. Если точное
@@ -583,6 +594,7 @@
     <script defer src="script/index.js"></script>
     <script defer src="script/game_1.js"></script>
     <script defer src="script/game_2.js"></script>
+    <script defer src="script/tips.js"></script>
     <script src="script/jquery-3.6.3.js"></script>
   </body>
 </html>

@@ -1,51 +1,51 @@
 /* ОБУЧЕНИЕ МЕНЮ */
 .menu_educ {
-    width: 80px;
-    height: 100vh ;
-    float: right;
-    border-right: 6px solid #B8EC49
+  width: 80px;
+  height: 100vh;
+  float: right;
+  border-right: 6px solid #b8ec49;
 }
 .menu_game {
-    width: 80px;
-    height: 100vh ;
-    float: right;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+  width: 4vw;
+  height: 100vh;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 .menu_block {
-    width: 68px;
-    height: 25vh;
-    border-left:  6px solid #B8EC49;
-    border-right:  6px solid #B8EC49;
-    border-bottom:  3px solid #B8EC49;
-    border-top:  3px solid #B8EC49;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 3.5vw;
+  height: 25vh;
+  border-left: 6px solid #b8ec49;
+  border-right: 6px solid #b8ec49;
+  border-bottom: 3px solid #b8ec49;
+  border-top: 3px solid #b8ec49;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .active {
-    width: 74px;
-    height: calc(25vh - 10px);
-    background: #142F12 ;
-    border-left:0px;
-    border-right:  6px solid #B8EC49 ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: calc(3.5vw + 6px);
+  height: calc(25vh - 10px);
+  background: #142f12;
+  border-left: 0px;
+  border-right: 6px solid #b8ec49;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .menu_block_active_educ {
-    width: 80px;
-    height: 37vh;
-    background: #142F12 ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 80px;
+  height: 37vh;
+  background: #142f12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu_educ h2 {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .menu_game p {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
