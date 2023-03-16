@@ -38,3 +38,14 @@ $("#planet_screen_tip_1").click(function () {
   });
   $(".menu_block").css("pointer-events", "none");
 });
+$("#group_screen_tip_1").click(function () {
+  $("#group_screen_tip_box_1").css("visibility", "visible");
+  $(".hidden_tool").each(function () {
+    if ($(this).hasClass("tooltip_1_1")) {
+      $(this).css("opacity", "1");
+    } else {
+      $(this).css("opacity", ".4");
+    }
+  });
+  $(".menu_block").css("pointer-events", "none");
+});

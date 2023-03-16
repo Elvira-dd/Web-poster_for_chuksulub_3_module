@@ -1,124 +1,133 @@
 .resque_buttons {
-    display:flex;
-    flex-direction: column;
-    margin-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 7vh;
 }
 .second_part_screen {
-    margin-top: 3vh;
+  margin-top: 3vh;
 }
 .condition_text {
-    width: 39vw;
-    height: 70vh;
-    overflow: auto;
+  width: 39vw;
+  height: 70vh;
+  overflow: auto;
 }
 .text::-webkit-scrollbar-track {
-    background-color: #021A0C ;
-    border:3px solid #B8EC49
+  background-color: #021a0c;
+  border: 3px solid #b8ec49;
 }
 .text::-webkit-scrollbar {
-    width: 20px;
-    background-color: #021A0C ;
-    border:3px solid #B8EC49
+  width: 20px;
+  background-color: #021a0c;
+  border: 3px solid #b8ec49;
 }
 .text::-webkit-scrollbar-thumb {
-    background-color: #B8EC49;
-    border:3px solid #B8EC49
+  background-color: #b8ec49;
+  border: 3px solid #b8ec49;
 }
-
 .two_condition_texts {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 #condition_screen {
-    display:none;
-    position:absolute;
-    visibility: hidden;
+  display: none;
+  position: absolute;
+  visibility: hidden;
 }
 #planet_screen {
-    display:none;
-    position:absolute;
-    visibility: hidden;
+  display: none;
+  position: absolute;
+  visibility: hidden;
 }
 #group_screen {
-    display:none;
-    position:absolute;
-    visibility: hidden;
+  display: none;
+  position: absolute;
+  visibility: hidden;
 }
 .planet_div {
-    width: 48%;
-    display: flex;
-    justify-content: center;
+  width: 48%;
+  display: flex;
+  justify-content: center;
 }
 .planet {
-    height: 50vh;
-    width: auto;
+  height: 50vh;
+  width: auto;
 }
 .planet_tablet_div {
-    width: 50%;
+  width: 50%;
 }
-.planet_tablet  {
-    height:10vh;
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 2vw;
-    align-items: center;
+.planet_tablet {
+  height: 10vh;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2vw;
+  align-items: center;
 }
 .small_tablet {
-    width:30%;
+  width: 30%;
 }
-.planet_tablet  p {
-    margin-top:0px
+.planet_tablet p {
+  margin-top: 0px;
 }
 .long_tablet {
-    width:90%;
+  width: 90%;
 }
 .mid_tablet {
-    width:50%;
+  width: 50%;
 }
 .planet_tablet_line {
-    display: flex;
-    flex-direction: row;
-    
+  display: flex;
+  flex-direction: row;
+}
+.full_screen_line {
+  height: 0.5vh;
+  width: 100%;
+  background-color: #b8ec49;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 }
 .group_button {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    padding:  20px;
-    background-color: #021A0C;
-    width:100%;
-    border: 6px solid #021A0C ;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  background-color: #021a0c;
+  width: 100%;
+  border: 6px solid #021a0c;
+  margin-bottom: 5px;
 }
 .group_button:hover {
-    border: 6px solid #B8EC49 ;
-    background-color: #1C3816;
+  border: 6px solid #b8ec49;
+  background-color: #1c3816;
 }
 .group_button p {
-    margin-top: 0px;
-    margin-left: 20px;
+  margin-top: 0px;
+  margin-left: 20px;
 }
 .groups_buttons_selector {
-    height: 1.5vh;
-    width: 1.5vh;
-    border: 6px solid #B8EC49;
+  height: 1.5vh;
+  width: 1.5vh;
+  border: 6px solid #b8ec49;
 }
 .active_selector {
-    background-color: #B8EC49;
+  background-color: #b8ec49;
 }
 .groups_buttons {
-    width: 50%;
+  width: 50%;
 }
 .active_group_div {
-    border: 6px solid #B8EC49 ;
-    background-color: #1C3816;
+  border: 6px solid #b8ec49;
+  background-color: #1c3816;
 }
 .crossed_line_button {
-    height: 0.5vh;
-    width: 100%;
-    background-color: #93C23D;
-    margin-top: -4vh;
+  height: 0.5vh;
+  width: 100%;
+  background-color: #93c23d;
+  margin-top: -4vh;
+}
+.obrabotka_div img {
+  width: auto;
+  height: 50vh;
 }

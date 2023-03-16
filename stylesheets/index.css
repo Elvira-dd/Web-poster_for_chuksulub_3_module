@@ -1,6 +1,10 @@
 @import "font.css";
 @import "education_screen.css";
 @import "game.css";
+::selection {
+  background: #b8ec49;
+  color: #021a0c;
+}
 body {
   overflow: hidden;
   width: 100vw;

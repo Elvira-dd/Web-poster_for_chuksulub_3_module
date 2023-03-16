@@ -197,17 +197,27 @@
             >
               ?
             </div>
+            <!--  -->
             <button
               type="button"
               id="resque_button_help_usuall"
+              class="resque_button_next"
               style="margin-top: 0"
             >
               >Отправить гуманитарную помощь
             </button>
-            <button type="button" id="resque_button_help_winter">
+            <button
+              type="button"
+              id="resque_button_help_winter"
+              class="resque_button_next"
+            >
               >Отправить зимнюю гуманитарную помощь
             </button>
-            <button type="button" id="resque_button_help_hotl">
+            <button
+              type="button"
+              id="resque_button_help_hotl"
+              class="resque_button_next"
+            >
               >Отправить огнеупорную гуманитарную помощь
             </button>
             <button type="button" id="resque_button_help_return">
@@ -216,6 +226,7 @@
             <button type="button" id="resque_button_help_cancel">
               >Отказать в запросе
             </button>
+            <!--  -->
           </div>
         </div>
         <div class="second_part_screen" id="condition_screen">
@@ -410,7 +421,24 @@
             >
               ?
             </div>
-            <div id="groups_buttons" class="groups_buttons">
+            <div
+              class="tip_boxes tooltip_1"
+              id="group_screen_tip_box_1"
+              style="
+                margin-top: 0vh;
+                visibility: hidden;
+                width: calc(100% - 4vw);
+              "
+            >
+              <p>
+                Ресурсы центра ограничены, поэтому не всегда вам будет доступно
+                отправить ту или иную группу. Если вам нужно отправить
+                недоступную группировку,найдите альтернативное решение или
+                перенаправьте запрос в другое отделение
+              </p>
+              <img src="images/close.svg" alt="" class="closing_tip" />
+            </div>
+            <div id="groups_buttons" class="groups_buttons hidden_tool">
               <button
                 type="button"
                 id="safety_group_button"
@@ -525,7 +553,7 @@
               />
             </div>
           </div>
-          <div id="groups_text" style="visibility: hidden">
+          <div id="groups_text" style="visibility: hidden" class="hidden_tool">
             <h2 style="margin-top: 2vh; margin-bottom: 1vh">
               ---------------------------------------------------------
             </h2>
@@ -587,6 +615,43 @@
                 шоколад, консервы, сухофрукты, Фильтр для очистки воды
               </p>
             </div>
+          </div>
+        </div>
+        <div
+          style="
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+          "
+          id="obrabotka"
+        >
+          <div>
+            <div class="full_screen_line"></div>
+            <p id="obrabotka_text">
+              Гуманитарная помощь отправлена на планету А-564 <br />
+              <br />
+              <br />
+              Обработано 1/2 запросов
+            </p>
+          </div>
+          <div
+            class="obrabotka_div"
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-evenly;
+              align-items: center;
+            "
+          >
+            <img src="images/group_safety.png" alt="" />
+            <img
+              id="change"
+              style="height: 14vh; margin-top: -14vh"
+              src="images/change_01.png"
+              alt=""
+            />
+            <img src="images/planet_1.png" alt="" />
           </div>
         </div>
       </div>

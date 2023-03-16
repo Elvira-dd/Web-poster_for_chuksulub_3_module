@@ -303,3 +303,132 @@ $("#gum_fire_button").click(function () {
     `Состав: сухое горючее,спички, медицинские жгуты, марлевые бинты, йод, кровоостанавливающие, аспирин, влажные салфетки, рюкзак, спальный мешок с охлаждением, быстрорастворимая каша, шоколад, консервы, сухофрукты, фильтр для очистки воды, системы охлаждения воды, тканевый тент для создания totalblack тени, охлаждающие подушки, ледяные вентиляторы`
   );
 });
+// Переход на следующий уровень
+//Гуманитарная помощь
+$(".resque_button_next").click(function () {
+  obrabotka();
+  $("#screen_naming_2_3").css({
+    visibility: "hidden",
+    display: "none",
+  });
+  $(".second_part_screen").css({
+    visibility: "hidden",
+    display: "none",
+  });
+  $("#obrabotka").css({
+    display: "flex",
+  });
+  $(".menu_block").css("pointer-events", "none");
+  $(".menu_block").css("opacity", ".4");
+  setTimeout(function () {
+    $("#change").attr("src", "images/change_02.png");
+  }, 500);
+  setTimeout(function () {
+    $("#change").attr("src", "images/change_03.png");
+  }, 1000);
+  setTimeout(function () {
+    $("#change").attr("src", "images/change_04.png");
+  }, 1500);
+  setTimeout(function () {
+    $("#change").attr("src", "images/change_05.png");
+  }, 2000);
+  setTimeout(function () {
+    $("#change").attr("src", "images/change_06.png");
+  }, 2500);
+});
+//
+$("#resque_button_help_return").click(function () {
+  obrabotka();
+  $("#screen_naming_2_3").css({
+    visibility: "hidden",
+    display: "none",
+  });
+  $(".second_part_screen").css({
+    visibility: "hidden",
+    display: "none",
+  });
+  $("#obrabotka").css({
+    display: "flex",
+  });
+  $("#obrabotka_text").text(
+    "Запрос перенаправлен в основной административный центр"
+  );
+  //СДЕЛАЙ КАРТИНКИ ДЛЯ ЭТОГО
+  $(".menu_block").css("pointer-events", "none");
+  $(".menu_block").css("opacity", ".4");
+  setTimeout(function () {
+    $("#change").attr("src", "images/change_02.png");
+  }, 500);
+  setTimeout(function () {
+    $("#change").attr("src", "images/change_03.png");
+  }, 1000);
+  setTimeout(function () {
+    $("#change").attr("src", "images/change_04.png");
+  }, 1500);
+  setTimeout(function () {
+    $("#change").attr("src", "images/change_05.png");
+  }, 2000);
+  setTimeout(function () {
+    $("#change").attr("src", "images/change_06.png");
+  }, 2500);
+});
+//
+$("#resque_button_help_cancel").click(function () {
+  obrabotka();
+  $("#screen_naming_2_3").css({
+    visibility: "hidden",
+    display: "none",
+  });
+  $(".second_part_screen").css({
+    visibility: "hidden",
+    display: "none",
+  });
+  $("#obrabotka").css({
+    display: "flex",
+  });
+  $("#obrabotka_text").text(
+    "В запросе отказано.  Каждый отклоненный запрос в конце рабочего необходимо письмено объяснить. Если вы отказали случайно, обратитесь к администратору "
+  );
+  //СДЕЛАЙ КАРТИНКИ ДЛЯ ЭТОГО
+  $(".menu_block").css("pointer-events", "none");
+  $(".menu_block").css("opacity", ".4");
+  setTimeout(function () {
+    $("#change").attr("src", "images/change_02.png");
+  }, 500);
+  setTimeout(function () {
+    $("#change").attr("src", "images/change_03.png");
+  }, 1000);
+  setTimeout(function () {
+    $("#change").attr("src", "images/change_04.png");
+  }, 1500);
+  setTimeout(function () {
+    $("#change").attr("src", "images/change_05.png");
+  }, 2000);
+  setTimeout(function () {
+    $("#change").attr("src", "images/change_06.png");
+  }, 2500);
+});
+function obrabotka() {
+  $("#screen_naming_1_2").text("ОБРАБОТКА");
+  setTimeout(function () {
+    $("#screen_naming_1_2").text("ОБРАБОТКА.");
+  }, 500);
+  setTimeout(function () {
+    $("#screen_naming_1_2").text("ОБРАБОТКА..");
+  }, 1000);
+  setTimeout(function () {
+    $("#screen_naming_1_2").text("ОБРАБОТКА...");
+  }, 1500);
+  setTimeout(function () {
+    $("#screen_naming_1_2").text("ОБРАБОТКА");
+  }, 2000);
+  setTimeout(function () {
+    $("#screen_naming_1_2").text("ОБРАБОТКА.");
+  }, 2500);
+  setTimeout(function () {
+    $("#screen_naming_1_2").text("ОБРАБОТКА..");
+  }, 3000);
+  setTimeout(function () {
+    $("#screen_naming_1_2").text("ОБРАБОТКА...");
+  }, 3500);
+}
