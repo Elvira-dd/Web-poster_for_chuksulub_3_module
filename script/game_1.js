@@ -408,6 +408,7 @@ $("#resque_button_help_cancel").click(function () {
     $("#change").attr("src", "images/change_06.png");
   }, 2500);
 });
+
 function obrabotka() {
   $("#screen_naming_1_2").text("ОБРАБОТКА");
   setTimeout(function () {
@@ -430,5 +431,8 @@ function obrabotka() {
   }, 3000);
   setTimeout(function () {
     $("#screen_naming_1_2").text("ОБРАБОТКА...");
+  }, 3500);
+  setTimeout(function () {
+    $("#obrabotka_button").css("visibility", "visible");
   }, 3500);
 }

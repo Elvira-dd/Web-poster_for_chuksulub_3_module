@@ -3,6 +3,10 @@
   flex-direction: column;
   margin-top: 7vh;
 }
+.add_count {
+  width: 1vh;
+  height: 1vh;
+}
 .second_part_screen {
   margin-top: 3vh;
 }

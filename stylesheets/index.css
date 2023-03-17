@@ -64,9 +64,10 @@ button {
   height: 7vh;
   width: 100%;
   border: 6px solid #021a0c;
-  display: inline-block;
+  display: flex;
   cursor: pointer;
   padding-left: 10px;
+  align-items: center;
 }
 button + button {
   margin-top: 0px;
@@ -77,8 +78,8 @@ button:hover {
   cursor: url(../images/cursor_active.png), auto;
 }
 button p {
-  margin-left: 30px;
-  margin-top: -23px;
+  margin-left: 0px;
+  margin-top: 0px;
 }
 ::placeholder {
   color: #6a922f;

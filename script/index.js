@@ -3,22 +3,22 @@
 typeWriter(screen_naming_educ);
 setTimeout(() => {
   typeWriter(screen_naming_educ_2);
-}, 1000);
+}, 500);
 setTimeout(() => {
   typeWriter(screen_naming_educ_3);
-}, 2500);
+}, 1000);
 setTimeout(() => {
   typeWriter(screen_educ_login_1);
-}, 3500);
+}, 1500);
 setTimeout(() => {
   imageAppear(user_name);
-}, 4500);
+}, 2000);
 setTimeout(() => {
   typeWriter(nextScreen_p);
-}, 5500);
+}, 3000);
 setTimeout(() => {
   document.getElementById("nextScreen").style.visibility = "visible";
-}, 5500);
+}, 3000);
 
 //SECOND SCREEN WITH EDUCATION
 
@@ -47,37 +47,37 @@ $("#nextScreen").click(function () {
   typeWriter(elementEl);
   setTimeout(() => {
     typeWriter(screen_educ_text_1);
-  }, 11000);
+  }, 8000);
   setTimeout(() => {
     typeWriter(screen_educ_text_2);
-  }, 13000);
+  }, 10000);
   setTimeout(() => {
     document.getElementById("screen_educ_tip").style.visibility = "visible";
-  }, 13000);
+  }, 10500);
   setTimeout(() => {
     typeWriter(screen_educ_text_3);
-  }, 14500);
+  }, 12500);
   setTimeout(() => {
     document.getElementById("screen_educ_buttonYes").style.visibility =
       "visible";
-  }, 15500);
+  }, 13000);
   setTimeout(() => {
     typeWriter(screen_educ_buttonYes_p);
-  }, 15500);
+  }, 13000);
   setTimeout(() => {
     document.getElementById("screen_educ_buttonNo").style.visibility =
       "visible";
-  }, 16000);
+  }, 13500);
   setTimeout(() => {
     typeWriter(screen_educ_buttonNo_p);
-  }, 16000);
+  }, 13500);
 });
 function typeWriter(el) {
   el.style.visibility = "visible";
   const textArray = el.innerHTML.split("");
   el.innerHTML = "";
   textArray.forEach((letter, i) =>
-    setTimeout(() => (el.innerHTML += letter), 60 * i)
+    setTimeout(() => (el.innerHTML += letter), 50 * i)
   );
 }
 
@@ -108,8 +108,15 @@ $("#screen_educ_buttonNo").click(function () {
   setTimeout(() => {
     imageAppear(fail_screen_joke_sad_semmy);
   }, 11000);
+  setTimeout(function () {
+    $("#message_reload").css("visibility", "visible");
+    $("#fail_screen_joke").css("opacity", ".4");
+    $(".menu_educ").css("opacity", ".4");
+  }, 14000);
 });
-
+$("#message_reload").click(function () {
+  location.reload();
+});
 function imageAppear(image) {
   image.style.visibility = "visible";
   setTimeout(() => {
@@ -129,6 +136,7 @@ function imageAppear(image) {
 //THIRD SCREEN WITH EDUCATION | YES | LOADER
 
 $("#screen_educ_buttonYes").click(function () {
+  $(".screen").css("position", "absolute");
   document.getElementById("screen_educ_buttonNo").style.display = "none";
   document.getElementById("screen_educ_buttonYes").style.display = "none";
   document.getElementById("screen_naming_educ").style.display = "none";
@@ -164,4 +172,8 @@ $("#screen_educ_buttonYes").click(function () {
   setTimeout(() => {
     document.getElementById("education").style.position = "absolute";
   }, 8000);
+  setTimeout(() => {
+    $("#game").css("display", "block");
+    $(".screen").css("position", "relative");
+  }, 8500);
 });

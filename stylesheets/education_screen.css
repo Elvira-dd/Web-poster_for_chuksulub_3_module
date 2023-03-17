@@ -1,38 +1,43 @@
 .screen_educ {
-    width: 100%;
+  width: 100%;
 }
 .fail_screen_joke_sad_semmy {
-    width: 26%;
-    height: auto;
-    margin-top: 100px;
-    visibility: hidden;
+  width: 26%;
+  height: auto;
+  margin-top: 100px;
+  visibility: hidden;
 }
 .fail_screen_joke {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    visibility: hidden;
-    margin-top: -45px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+  margin-top: -45px;
 }
 .screen_naming_in_educ {
-    text-align: center;
-    margin-bottom: 45px;
+  text-align: center;
+  margin-bottom: 45px;
 }
-.educ_pos {
-    margin-left: 63%;
-    margin-top:-4.5%
+#message_reload {
+  display: flex;
+  position: absolute;
+  height: fit-content;
+  padding: 4vh;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  border: 6px solid #b8ec49;
 }
-
 /* PRELOADER */
 
 .semmy_loader {
-    width: 30%;
-    height: auto;
-    visibility: hidden;
+  width: 30%;
+  height: auto;
+  visibility: hidden;
 }
 .preloader_full {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

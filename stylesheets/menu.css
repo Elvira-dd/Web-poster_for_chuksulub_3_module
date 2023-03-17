@@ -1,6 +1,6 @@
 /* ОБУЧЕНИЕ МЕНЮ */
 .menu_educ {
-  width: 80px;
+  width: 4vw;
   height: 100vh;
   float: right;
   border-right: 6px solid #b8ec49;
@@ -35,7 +35,7 @@
   justify-content: center;
 }
 .menu_block_active_educ {
-  width: 80px;
+  width: 3.5vw;
   height: 37vh;
   background: #142f12;
   display: flex;
@@ -43,7 +43,7 @@
   justify-content: center;
 }
 
-.menu_educ h2 {
+.menu_educ p {
   transform: rotate(90deg);
 }
 .menu_game p {
