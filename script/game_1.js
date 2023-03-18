@@ -433,6 +433,9 @@ function obrabotka() {
     $("#screen_naming_1_2").text("ОБРАБОТКА...");
   }, 3500);
   setTimeout(function () {
+    $("#screen_naming_1_2").text("ОБРАБОТКА ЗАВЕРШЕНА");
+  }, 4000);
+  setTimeout(function () {
     $("#obrabotka_button").css("visibility", "visible");
-  }, 3500);
+  }, 4000);
 }
