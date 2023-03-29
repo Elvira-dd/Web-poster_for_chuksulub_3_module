@@ -21,7 +21,9 @@
 // }, 3000);
 
 //SECOND SCREEN WITH EDUCATION
-
+let correct_ans = 0;
+let ans_1 = 0;
+let ans_2 = 0;
 $("#nextScreen").click(function () {
   screen_educ_login_1.style.visibility = "hidden";
 

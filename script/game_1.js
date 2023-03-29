@@ -330,6 +330,8 @@ $("#resque_button_help_usuall").click(function () {
 });
 $("#resque_button_help_winter").click(function () {
   $("#gum_winter_count").text("х1");
+  correct_ans = 1;
+  ans_1 = 1;
 });
 $("#resque_button_help_hot").click(function () {
   $("#gum_fire_count").text("х2");

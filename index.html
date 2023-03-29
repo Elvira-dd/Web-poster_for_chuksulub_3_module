@@ -210,7 +210,7 @@
     </div> -->
     <!-- GAME SCREENS -->
 
-    <!-- <div id="game" style="display: block">
+    <div id="game" style="display: block">
       <div class="menu_game hidden_tool">
         <div class="menu_block" id="screen_condition"><p>УСЛОВИЯ</p></div>
         <div class="menu_block active" id="screen_resque"><p>ЗАПРОС</p></div>
@@ -833,7 +833,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- RESULT SCREEN -->
     <div id="result" style="display: block; visibility: visible">
       <div class="menu_educ">
@@ -844,28 +844,55 @@
         >
           <p>РЕЗУЛЬТАТЫ</p>
         </div>
-        <div class="menu_block" id="menu_block_results" style="height: 37vh">
+        <div
+          class="menu_block"
+          id="menu_block_errors"
+          style="height: 37vh; border-bottom: 6px solid #b8ec49"
+        >
           <p>ОШИБКИ</p>
         </div>
       </div>
       <div class="screen">
-        <div id="screen_results" style="display: none; visibility: hidden">
-          <h1>ПОЗДРАВЛЯЕМ!</h1>
-          <h2>Обучение завершено успешно</h2>
-          <h1 style="margin-top: 10vh">2/2</h1>
-          <h2>правильных ответов</h2>
+        <div id="screen_results">
+          <h1 id="result_1" style="visibility: hidden">ПОЗДРАВЛЯЕМ!</h1>
+          <h2 id="result_2" style="visibility: hidden">
+            Обучение завершено успешно
+          </h2>
+          <h1 style="margin-top: 10vh; visibility: hidden" id="result_3"></h1>
+          <h2 id="result_4" style="visibility: hidden">правильных ответов</h2>
           <img
             src="images/congrant_semmy.png"
             alt=""
-            style="height: auto; width: 40vw; margin-left: 23vw"
+            style="
+              height: auto;
+              width: 40vw;
+              margin-left: 23vw;
+              visibility: hidden;
+              margin-top: 2vh;
+            "
+            id="congrant_img"
           />
         </div>
-        <div id="screen_errors">
+        <div id="screen_errors" style="display: none; visibility: hidden">
           <h1>ОШИБКИ</h1>
-          <h2 style="text-align: left; margin-top: 10vh" id="error_text">
+          <h2
+            style="text-align: left; margin-top: 10vh; display: none"
+            id="error_text_0"
+          >
             Вы молодцы, ошибок нет:)
           </h2>
-          <p id="error_descrip"></p>
+          <div id="error_text_1" style="display: none">
+            <h2 style="text-align: left; margin-top: 5vh">
+              Запрос №1 на гуманитарную помощь
+            </h2>
+            <p>Ежедненвная температура ниже -10</p>
+          </div>
+          <br />
+          <br />
+          <div id="error_text_2" style="display: none">
+            <h2 style="text-align: left">Запрос №2 на помощь планете</h2>
+            <p>Недостаточный масштаб для вызова эвакуационной группы</p>
+          </div>
         </div>
       </div>
     </div>

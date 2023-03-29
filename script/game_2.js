@@ -15,6 +15,7 @@ $("#obrabotka_button").click(function () {
   $("#resque_button_group_safe").text(">Отправить группу спасения");
   $("#resque_button_group_volonture").css("display", "block");
   $("#resque_button_help_winter").attr("id", "resque_button_group_tech");
+  $("#resque_button_help_winter").remove("#resque_button_help_winter");
   $("#resque_button_group_tech").text(">Отправить техническую группу");
   $("#resque_button_help_hot").attr("id", "resque_button_group_evoq");
   $("#resque_button_group_evoq").text(">Отправить группу временной эвакуации");
@@ -63,6 +64,8 @@ $("#obrabotka_button").click(function () {
   });
   $("#resque_button_group_safe").click(function () {
     $("#obrabotka_text_1").text("Группа спасения отправлена на планету О-009");
+    correct_ans += 1;
+    ans_2 = 1;
   });
   $("#resque_button_group_tech").click(function () {
     $("#obrabotka_text_1").text(
