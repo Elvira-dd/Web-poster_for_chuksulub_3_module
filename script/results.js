@@ -59,6 +59,7 @@ $("#finish_button").click(function () {
     $("#menu_block_errors").removeClass("active");
     $("#menu_block_results").addClass("active");
   });
+  // ЧТО?
   switch (ans_1) {
     case 0:
       if (ans_2 == 0) {
