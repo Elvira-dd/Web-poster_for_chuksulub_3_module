@@ -179,5 +179,7 @@ $("#screen_educ_buttonYes").click(function () {
     $(".screen").css("position", "relative");
     $("#screen_naming_1_2").css("visibility", "visible");
     $(".menu_game").css("visibility", "visible");
-  }, 8500);
+    $("#education").css("display", "none");
+    $("#education").css("visibility", "hidden");
+  }, 8000);
 });

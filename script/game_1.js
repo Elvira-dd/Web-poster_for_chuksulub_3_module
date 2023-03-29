@@ -293,6 +293,9 @@ $("#gum_fire_button").click(function () {
 //Гуманитарная помощь
 $(".resque_button_next").click(function () {
   obrabotka();
+  setTimeout(function () {
+    $("#obrabotka_button").css("visibility", "visible");
+  }, 4000);
   $("#screen_naming_2_3").css({
     visibility: "hidden",
     display: "none",
@@ -334,6 +337,9 @@ $("#resque_button_help_hot").click(function () {
 //
 $("#resque_button_help_return").click(function () {
   obrabotka();
+  setTimeout(function () {
+    $("#obrabotka_button").css("visibility", "visible");
+  }, 4000);
   $("#screen_naming_2_3").css({
     visibility: "hidden",
     display: "none",
@@ -345,31 +351,19 @@ $("#resque_button_help_return").click(function () {
   $("#obrabotka").css({
     display: "flex",
   });
-  $("#obrabotka_text").text(
+  $("#obrabotka_text_1").text(
     "Запрос перенаправлен в основной административный центр"
   );
-  //СДЕЛАЙ КАРТИНКИ ДЛЯ ЭТОГО
   $(".menu_block").css("pointer-events", "none");
   $(".menu_block").css("opacity", ".4");
-  setTimeout(function () {
-    $("#change").attr("src", "images/change_02.png");
-  }, 500);
-  setTimeout(function () {
-    $("#change").attr("src", "images/change_03.png");
-  }, 1000);
-  setTimeout(function () {
-    $("#change").attr("src", "images/change_04.png");
-  }, 1500);
-  setTimeout(function () {
-    $("#change").attr("src", "images/change_05.png");
-  }, 2000);
-  setTimeout(function () {
-    $("#change").attr("src", "images/change_06.png");
-  }, 2500);
+  $(".obrabotka_div").css("visibility", "hidden");
 });
 //
 $("#resque_button_help_cancel").click(function () {
   obrabotka();
+  setTimeout(function () {
+    $("#obrabotka_button").css("visibility", "visible");
+  }, 4000);
   $("#screen_naming_2_3").css({
     visibility: "hidden",
     display: "none",
@@ -381,27 +375,12 @@ $("#resque_button_help_cancel").click(function () {
   $("#obrabotka").css({
     display: "flex",
   });
-  $("#obrabotka_text").text(
+  $("#obrabotka_text_1").text(
     "В запросе отказано.  Каждый отклоненный запрос в конце рабочего необходимо письмено объяснить. Если вы отказали случайно, обратитесь к администратору "
   );
-  //СДЕЛАЙ КАРТИНКИ ДЛЯ ЭТОГО
   $(".menu_block").css("pointer-events", "none");
   $(".menu_block").css("opacity", ".4");
-  setTimeout(function () {
-    $("#change").attr("src", "images/change_02.png");
-  }, 500);
-  setTimeout(function () {
-    $("#change").attr("src", "images/change_03.png");
-  }, 1000);
-  setTimeout(function () {
-    $("#change").attr("src", "images/change_04.png");
-  }, 1500);
-  setTimeout(function () {
-    $("#change").attr("src", "images/change_05.png");
-  }, 2000);
-  setTimeout(function () {
-    $("#change").attr("src", "images/change_06.png");
-  }, 2500);
+  $(".obrabotka_div").css("visibility", "hidden");
 });
 
 function obrabotka() {
@@ -429,8 +408,5 @@ function obrabotka() {
   }, 3500);
   setTimeout(function () {
     $("#screen_naming_1_2").text("ОБРАБОТКА ЗАВЕРШЕНА");
-  }, 4000);
-  setTimeout(function () {
-    $("#obrabotka_button").css("visibility", "visible");
   }, 4000);
 }

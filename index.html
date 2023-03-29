@@ -73,7 +73,7 @@
           <p>ОБУЧЕНИЕ</p>
         </div>
       </div>
-      <div class="screen">
+      <div class="screen" id="education_screen">
         <div id="education_full">
           <div class="screen_naming_in_educ">
             <h1 id="screen_naming_educ" style="visibility: hidden">
@@ -305,7 +305,6 @@
             >
               ?
             </div>
-            
 
             <button
               type="button"
@@ -351,7 +350,6 @@
             >
               >Отказать в запросе
             </button>
-            
           </div>
         </div>
         <div class="second_part_screen" id="condition_screen">
@@ -516,9 +514,21 @@
             </div>
           </div>
           <div style="margin-top: 3vh" class="hidden_tool">
-            <h2>---------------------------------------------------------</h2>
+            <div
+              style="
+                width: 100%;
+                height: 1vh;
+                border-top: 1vh dashed #b8ec49;
+                margin-top: 3vh;
+                margin-bottom: 3vh;
+              "
+            ></div>
             <h2 style="text-align: left">ПОСЛЕДНИЕ КАТАСТРОФЫ</h2>
-            <p class="text" style="width: 100%; height: 15vh; overflow: auto">
+            <p
+              class="text"
+              style="width: 100%; height: 15vh; overflow: auto"
+              id="planet_text_1"
+            >
               <26.04.45> <br />
               Землетрясение в трех центральных районах
               <br />
@@ -534,6 +544,28 @@
               <10.06.45> <br />
               Температура стабилизировалась. Средняя дневная температура на 15°С
               ниже нормы
+            </p>
+            <p
+              class="text"
+              style="
+                width: 100%;
+                height: 15vh;
+                overflow: auto;
+                visibility: hidden;
+              "
+              id="planet_text_2"
+            >
+              <12.03.45> <br />
+              Особо длинние полярные ночи: 158 дней. Причины выясняются
+              <br />
+              <br />
+              <16.03.45> <br />
+              Резкая активность Бегунов и неоновых жаб, несмотря на высокие
+              температуры
+              <br />
+              <br />
+              <17.04.45> <br />
+              Обнаружены нестабильное распространение заражения на юге планеты
             </p>
           </div>
         </div>
@@ -675,13 +707,20 @@
                 alt=""
                 style="height: 51vh"
                 id="group_screen_img"
+                class="hidden_tool"
               />
             </div>
           </div>
           <div id="groups_text" style="visibility: hidden" class="hidden_tool">
-            <h2 style="margin-top: 2vh; margin-bottom: 1vh">
-              ---------------------------------------------------------
-            </h2>
+            <div
+              style="
+                width: 100%;
+                height: 1vh;
+                border-top: 1vh dashed #b8ec49;
+                margin-top: 3vh;
+                margin-bottom: 3vh;
+              "
+            ></div>
             <div style="display: flex">
               <h2 id="group_text_name_prev" style="opacity: 0.4"><</h2>
               <h2
@@ -720,10 +759,16 @@
               </p>
             </div>
           </div>
-          <div id="boxes_text" style="visibility: hidden">
-            <h2 style="margin-top: 2vh; margin-bottom: 1vh">
-              ---------------------------------------------------------
-            </h2>
+          <div id="boxes_text" style="visibility: hidden" class="hidden_tool">
+            <div
+              style="
+                width: 100%;
+                height: 1vh;
+                border-top: 1vh dashed #b8ec49;
+                margin-top: 3vh;
+                margin-bottom: 3vh;
+              "
+            ></div>
             <h2 id="boxes_text_1">Базовая гуманитарная помощь</h2>
             <div class="text" style="width: 100%; height: 15vh; overflow: auto">
               <br />
@@ -748,12 +793,13 @@
         >
           <div>
             <div class="full_screen_line"></div>
-            <p id="obrabotka_text">
-              Гуманитарная помощь отправлена на планету А-564 <br />
-              <br />
-              <br />
-              Обработано 1/2 запросов
+            <p id="obrabotka_text_1">
+              Гуманитарная помощь отправлена на планету А-564
             </p>
+            <br />
+            <br />
+            <p id="obrabotka_text_2">Обработано 1/2 запросов</p>
+
             <br />
             <br />
             <button
@@ -762,6 +808,9 @@
               id="obrabotka_button"
             >
               >Следующий запрос
+            </button>
+            <button type="button" style="visibility: hidden" id="finish_button">
+              >Закончить обучение
             </button>
           </div>
           <div
@@ -773,7 +822,7 @@
               align-items: center;
             "
           >
-            <img src="images/group_safety.png" alt="" />
+            <img src="images/boxes.png" alt="" id="obrabotka_img" />
             <img
               id="change"
               style="height: 14vh; margin-top: -14vh"
@@ -786,7 +835,7 @@
       </div>
     </div> -->
     <!-- RESULT SCREEN -->
-    <div id="result">
+    <div id="result" style="display: block; visibility: visible">
       <div class="menu_educ">
         <div
           class="menu_block active"
