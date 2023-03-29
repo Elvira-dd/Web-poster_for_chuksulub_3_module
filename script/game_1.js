@@ -43,10 +43,10 @@ $("#screen_resque").click(function () {
   $("#screen_resque").addClass("active");
   $("#screen_condition").css("border-top", "3px solid #B8EC49");
   $("#screen_naming_2_3").css("position", "absolute");
-  $("#screen_naming_1_2").text("ЗАДАЧА №1");
+  $("#screen_naming_1_2").text("ЗАПРОС №1");
   $("#screen_naming_2_3").text("ГУМАНИТАРНАЯ ПОМОЩЬ");
   $("#resque_screen").css({
-    display: "block",
+    display: "flex",
     position: "relative",
     visibility: "visible",
   });
@@ -254,11 +254,6 @@ $("#gum_base_button").click(function () {
   $("#groups_text").css("position", "absolute");
   $("#boxes_text").css("visibility", "visible");
   $("#boxes_text_1").text("Базовая гуманитарная помощь");
-  $("#boxes_text_2").text(
-    `Рассчитывается на каждого человека из запроса. Если точное
-    количество коробок гуманитарной помощи не известно, то вы можете
-    перенаправить запрос или отправить иную помощь`
-  );
   $("#boxes_text_3").text(
     `Состав: сухое горючее, спички, медицинские жгуты, марлевые бинты, йод, кровоостанавливающие, аспирин, влажные салфетки, термобелье, рюкзак, спальный мешок, быстрорастворимая каша, шоколад, консервы, сухофрукты, Фильтр для очистки воды`
   );
@@ -274,11 +269,6 @@ $("#gum_winter_button").click(function () {
   $("#groups_text").css("position", "absolute");
   $("#boxes_text").css("visibility", "visible");
   $("#boxes_text_1").text("Зимняя гуманитарная помощь");
-  $("#boxes_text_2").text(
-    `Рассчитывается на каждого человека из запроса. Если точное
-    количество коробок гуманитарной помощи не известно, то вы можете
-    перенаправить запрос или отправить иную помощь`
-  );
   $("#boxes_text_3").text(
     `Состав: сухое горючее,дровяная микропечь, куртка, зимнии штаны, теплые ботинки,грелка для рук, спички, медицинские жгуты, марлевые бинты, йод, кровоостанавливающие, аспирин, влажные салфетки, термобелье, рюкзак, спальный мешок (выдержиающий до -30), быстрорастворимая каша, шоколад, консервы, сухофрукты, Фильтр для очистки воды`
   );
@@ -294,11 +284,7 @@ $("#gum_fire_button").click(function () {
   $("#groups_text").css("position", "absolute");
   $("#boxes_text").css("visibility", "visible");
   $("#boxes_text_1").text("Огнестойкая гуманитарная помощь");
-  $("#boxes_text_2").text(
-    `Рассчитывается на каждого человека из запроса. Если точное
-    количество коробок гуманитарной помощи не известно, то вы можете
-    перенаправить запрос или отправить иную помощь`
-  );
+
   $("#boxes_text_3").text(
     `Состав: сухое горючее,спички, медицинские жгуты, марлевые бинты, йод, кровоостанавливающие, аспирин, влажные салфетки, рюкзак, спальный мешок с охлаждением, быстрорастворимая каша, шоколад, консервы, сухофрукты, фильтр для очистки воды, системы охлаждения воды, тканевый тент для создания totalblack тени, охлаждающие подушки, ледяные вентиляторы`
   );
@@ -335,6 +321,15 @@ $(".resque_button_next").click(function () {
   setTimeout(function () {
     $("#change").attr("src", "images/change_06.png");
   }, 2500);
+});
+$("#resque_button_help_usuall").click(function () {
+  $("#gum_base_count").text("х6");
+});
+$("#resque_button_help_winter").click(function () {
+  $("#gum_winter_count").text("х1");
+});
+$("#resque_button_help_hot").click(function () {
+  $("#gum_fire_count").text("х2");
 });
 //
 $("#resque_button_help_return").click(function () {

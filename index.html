@@ -210,7 +210,7 @@
     </div> -->
     <!-- GAME SCREENS -->
 
-    <div id="game" style="display: block">
+    <!-- <div id="game" style="display: block">
       <div class="menu_game hidden_tool">
         <div class="menu_block" id="screen_condition"><p>УСЛОВИЯ</p></div>
         <div class="menu_block active" id="screen_resque"><p>ЗАПРОС</p></div>
@@ -254,7 +254,7 @@
               >
                 ?
               </div>
-              <p class="tooltip_1 hidden_tool">
+              <p class="tooltip_1 hidden_tool" id="resque_text">
                 Здравствуйте, просим вас прислать дополнительную зимнюю
                 гуманитарную помощь в 7 район. За последнюю неделю средняя
                 дневная температура опустилась ниже -10 градусов. Также
@@ -270,7 +270,11 @@
                 class="hidden_tool tooltip_1"
               >
                 ПРИЛОЖЕНИЕ:
-                <p class="tooltip_1 hidden_tool" style="margin-top: 0px">
+                <p
+                  class="tooltip_1 hidden_tool"
+                  style="margin-top: 0px"
+                  id="adding_file"
+                >
                   month_temp.xls
                 </p>
               </h2>
@@ -301,7 +305,8 @@
             >
               ?
             </div>
-            <!--  -->
+            
+
             <button
               type="button"
               id="resque_button_help_usuall"
@@ -312,6 +317,14 @@
             </button>
             <button
               type="button"
+              id="resque_button_group_volonture"
+              class="resque_button_next"
+              style="display: none; pointer-events: none; opacity: 0.5"
+            >
+              <p>>Отправить группу волонтеров</p>
+            </button>
+            <button
+              type="button"
               id="resque_button_help_winter"
               class="resque_button_next"
             >
@@ -319,7 +332,7 @@
             </button>
             <button
               type="button"
-              id="resque_button_help_hotl"
+              id="resque_button_help_hot"
               class="resque_button_next"
             >
               >Отправить огнеупорную гуманитарную помощь
@@ -338,7 +351,7 @@
             >
               >Отказать в запросе
             </button>
-            <!--  -->
+            
           </div>
         </div>
         <div class="second_part_screen" id="condition_screen">
@@ -432,13 +445,13 @@
                   class="planet_tablet small_tablet"
                   style="border-right: 6px solid #b8ec49"
                 >
-                  <p>А-564</p>
+                  <p id="info_planet">А-564</p>
                 </div>
                 <div
                   class="planet_tablet long_tablet"
                   style="justify-content: center"
                 >
-                  <p>ЦЕНТР ПОМОЩИ №28</p>
+                  <p id="info_center">ЦЕНТР ПОМОЩИ №28</p>
                 </div>
               </div>
               <div class="planet_tablet_line">
@@ -449,7 +462,7 @@
                   <p>ЗВЕЗДА</p>
                 </div>
                 <div class="planet_tablet mid_tablet" style="padding-left: 4vw">
-                  <p>
+                  <p id="info_star">
                     Проксима <br />
                     Центавра
                   </p>
@@ -463,7 +476,7 @@
                   <p>АТМОСФЕРА</p>
                 </div>
                 <div class="planet_tablet mid_tablet" style="padding-left: 4vw">
-                  <p>пригодная</p>
+                  <p id="info_atmosphere">пригодная</p>
                 </div>
               </div>
               <div
@@ -480,7 +493,7 @@
                   class="planet_tablet small_tablet"
                   style="padding-left: 4vw"
                 >
-                  <p>↓2°С</p>
+                  <p id="info_temp">↓2°С</p>
                 </div>
               </div>
               <div class="planet_tablet_line">
@@ -497,7 +510,7 @@
                   class="planet_tablet small_tablet"
                   style="padding-left: 4vw"
                 >
-                  <p>10м/с</p>
+                  <p id="info_wind">10м/с</p>
                 </div>
               </div>
             </div>
@@ -771,11 +784,47 @@
           </div>
         </div>
       </div>
+    </div> -->
+    <!-- RESULT SCREEN -->
+    <div id="result">
+      <div class="menu_educ">
+        <div
+          class="menu_block active"
+          id="menu_block_results"
+          style="height: 37vh; border-top: 0px"
+        >
+          <p>РЕЗУЛЬТАТЫ</p>
+        </div>
+        <div class="menu_block" id="menu_block_results" style="height: 37vh">
+          <p>ОШИБКИ</p>
+        </div>
+      </div>
+      <div class="screen">
+        <div id="screen_results" style="display: none; visibility: hidden">
+          <h1>ПОЗДРАВЛЯЕМ!</h1>
+          <h2>Обучение завершено успешно</h2>
+          <h1 style="margin-top: 10vh">2/2</h1>
+          <h2>правильных ответов</h2>
+          <img
+            src="images/congrant_semmy.png"
+            alt=""
+            style="height: auto; width: 40vw; margin-left: 23vw"
+          />
+        </div>
+        <div id="screen_errors">
+          <h1>ОШИБКИ</h1>
+          <h2 style="text-align: left; margin-top: 10vh" id="error_text">
+            Вы молодцы, ошибок нет:)
+          </h2>
+          <p id="error_descrip"></p>
+        </div>
+      </div>
     </div>
     <script defer src="script/index.js"></script>
     <script defer src="script/game_1.js"></script>
     <script defer src="script/game_2.js"></script>
     <script defer src="script/tips.js"></script>
+    <script defer src="script/results.js"></script>
     <script src="script/jquery-3.6.3.js"></script>
   </body>
 </html>

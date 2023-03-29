@@ -99,11 +99,14 @@ input[type="text"] {
   animation-duration: 2s;
   animation-delay: 5s;
   animation-fill-mode: both;
+  cursor: url(..images/cursor_text.png), auto;
 }
 input[type="text"]:focus {
   outline: none;
+  cursor: url(..images/cursor_text.png), auto;
   color: #b8ec49;
 }
+
 .tip {
   position: absolute;
   width: 3vh;

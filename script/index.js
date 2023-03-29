@@ -36,11 +36,11 @@ $("#nextScreen").click(function () {
   let output = "";
   if (userNameValue.length) {
     output = `<p id="elementEl" style="visibility:hidden";>Добро пожаловать, ${userNameValue}!
-     Теперь это ваше рабочее место. Сегодня ваши задачи - пройти обучение, изучить механику работы и обработать 3 запроса с планет А-564, З-98 и О-09 
+    Теперь это ваше рабочее место. Сегодня ваши задачи - пройти обучение, изучить механику работы и обработать 2 запроса с планет А-564 и О-009  
     </p>`;
   } else {
     output = `<p id="elementEl" style="visibility:hidden";>Добро пожаловать, человечек без имени!
-     Теперь это ваше рабочее место. Сегодня ваши задачи - пройти обучение, изучить механику работы и обработать 3 запроса с планет А-564, З-98 и О-09 
+     Теперь это ваше рабочее место. Сегодня ваши задачи - пройти обучение, изучить механику работы и обработать 2 запроса с планет А-564 и О-009 
     </p>`;
   }
   document.getElementById("second_educ_screen").innerHTML = output;
@@ -137,6 +137,7 @@ function imageAppear(image) {
 
 $("#screen_educ_buttonYes").click(function () {
   $(".screen").css("position", "absolute");
+  $(".menu_game").css("visibility", "hidden");
   document.getElementById("screen_educ_buttonNo").style.display = "none";
   document.getElementById("screen_educ_buttonYes").style.display = "none";
   document.getElementById("screen_naming_educ").style.display = "none";
@@ -145,6 +146,7 @@ $("#screen_educ_buttonYes").click(function () {
   document.getElementById("screen_educ_2").style.display = "none";
   document.getElementById("screen_educ_2").style.visibility = "hidden";
   document.getElementById("education_full").style.position = "absolute";
+  $("#screen_naming_1_2").css("visibility", "hidden");
   imageAppear(semmy_loader);
   setTimeout(() => {
     document.getElementById("semmy_loader").src = "images/loading_semmy_2.png";
@@ -175,5 +177,7 @@ $("#screen_educ_buttonYes").click(function () {
   setTimeout(() => {
     $("#game").css("display", "block");
     $(".screen").css("position", "relative");
+    $("#screen_naming_1_2").css("visibility", "visible");
+    $(".menu_game").css("visibility", "visible");
   }, 8500);
 });
