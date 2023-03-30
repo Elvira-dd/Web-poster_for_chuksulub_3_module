@@ -1,24 +1,24 @@
 //FIRST SCREEN WITH EDUCATION
 
-// typeWriter(screen_naming_educ);
-// setTimeout(() => {
-//   typeWriter(screen_naming_educ_2);
-// }, 500);
-// setTimeout(() => {
-//   typeWriter(screen_naming_educ_3);
-// }, 1000);
-// setTimeout(() => {
-//   typeWriter(screen_educ_login_1);
-// }, 1500);
-// setTimeout(() => {
-//   imageAppear(user_name);
-// }, 2000);
-// setTimeout(() => {
-//   typeWriter(nextScreen_p);
-// }, 3000);
-// setTimeout(() => {
-//   document.getElementById("nextScreen").style.visibility = "visible";
-// }, 3000);
+typeWriter(screen_naming_educ);
+setTimeout(() => {
+  typeWriter(screen_naming_educ_2);
+}, 500);
+setTimeout(() => {
+  typeWriter(screen_naming_educ_3);
+}, 1000);
+setTimeout(() => {
+  typeWriter(screen_educ_login_1);
+}, 1500);
+setTimeout(() => {
+  imageAppear(user_name);
+}, 2000);
+setTimeout(() => {
+  typeWriter(nextScreen_p);
+}, 3000);
+setTimeout(() => {
+  document.getElementById("nextScreen").style.visibility = "visible";
+}, 3000);
 
 //SECOND SCREEN WITH EDUCATION
 let correct_ans = 0;
@@ -26,7 +26,6 @@ let ans_1 = 0;
 let ans_2 = 0;
 $("#nextScreen").click(function () {
   screen_educ_login_1.style.visibility = "hidden";
-
   nextScreen.style.visibility = "hidden";
   nextScreen_p.style.visibility = "hidden";
   let userName = document.getElementById("user_name");
@@ -171,9 +170,13 @@ $("#screen_educ_buttonYes").click(function () {
     document.getElementById("semmy_loader").src = "images/loading_semmy_7.png";
   }, 7000);
   setTimeout(() => {
-    document.getElementById("education").style.display = "none";
+    $("#change_screen").css("visibility", "visible");
+  }, 7750);
+  setTimeout(() => {
+    $("#change_screen").css("visibility", "hidden");
   }, 8000);
   setTimeout(() => {
+    document.getElementById("education").style.display = "none";
     document.getElementById("education").style.position = "absolute";
   }, 8000);
   setTimeout(() => {

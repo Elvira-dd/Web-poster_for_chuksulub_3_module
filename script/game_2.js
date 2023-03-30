@@ -64,6 +64,7 @@ $("#obrabotka_button").click(function () {
   });
   $("#resque_button_group_safe").click(function () {
     $("#obrabotka_text_1").text("Группа спасения отправлена на планету О-009");
+    $(".obrabotka_div").css("visibility", "visible");
     correct_ans += 1;
     ans_2 = 1;
   });
@@ -71,11 +72,13 @@ $("#obrabotka_button").click(function () {
     $("#obrabotka_text_1").text(
       "Техническая группа отправлена на планету О-009"
     );
+    $(".obrabotka_div").css("visibility", "visible");
   });
   $("#resque_button_group_evoq").click(function () {
     $("#obrabotka_text_1").text(
       "Эвакуационная группа отправлена на планету О-009"
     );
+    $(".obrabotka_div").css("visibility", "visible");
   });
   // $("#resque_button_group_return").click(function () {});
   // $("#resque_button_group_cancel").click(function () {

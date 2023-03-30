@@ -13,6 +13,7 @@
 .condition_text {
   width: 39vw;
   height: 70vh;
+  padding-right: 2vw;
   overflow: auto;
 }
 .text::-webkit-scrollbar-track {
