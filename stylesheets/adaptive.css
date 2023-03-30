@@ -153,11 +153,11 @@
     font-size: 10vw;
   }
   h2 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   p {
-    font-size: 3vw;
-    line-height: 3.5vw;
+    font-size: 4vw;
+    line-height: 4.2vw;
   }
   button {
     height: 5vh;
@@ -180,7 +180,7 @@
     height: 85vh;
   }
   #screen_educ_tip {
-    margin-right: 17vw;
+    margin-right: 8vw;
   }
   #message_reload h1 {
     font-size: 7vw;
@@ -190,5 +190,17 @@
   }
   #message_reload {
     width: 90vw;
+  }
+  .menu_block_active_educ p {
+    margin-top: 0px;
+  }
+  ::placeholder {
+    font-size: 4vw;
+    line-height: 4.2vw;
+    margin-top: 1vh;
+  }
+  #semmy_loader {
+    width: 70%;
+    margin-top: 20vh;
   }
 }

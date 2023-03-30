@@ -178,8 +178,6 @@ $("#screen_educ_buttonYes").click(function () {
   setTimeout(() => {
     document.getElementById("education").style.display = "none";
     document.getElementById("education").style.position = "absolute";
-  }, 8000);
-  setTimeout(() => {
     $("#game").css("display", "block");
     $(".screen").css("position", "relative");
     $(".screen").css("display", "flex");
