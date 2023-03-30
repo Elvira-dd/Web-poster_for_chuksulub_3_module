@@ -1,24 +1,24 @@
 //FIRST SCREEN WITH EDUCATION
 
-typeWriter(screen_naming_educ);
-setTimeout(() => {
-  typeWriter(screen_naming_educ_2);
-}, 500);
-setTimeout(() => {
-  typeWriter(screen_naming_educ_3);
-}, 1000);
-setTimeout(() => {
-  typeWriter(screen_educ_login_1);
-}, 1500);
-setTimeout(() => {
-  imageAppear(user_name);
-}, 2000);
-setTimeout(() => {
-  typeWriter(nextScreen_p);
-}, 3000);
-setTimeout(() => {
-  document.getElementById("nextScreen").style.visibility = "visible";
-}, 3000);
+// typeWriter(screen_naming_educ);
+// setTimeout(() => {
+//   typeWriter(screen_naming_educ_2);
+// }, 500);
+// setTimeout(() => {
+//   typeWriter(screen_naming_educ_3);
+// }, 1000);
+// setTimeout(() => {
+//   typeWriter(screen_educ_login_1);
+// }, 1500);
+// setTimeout(() => {
+//   imageAppear(user_name);
+// }, 2000);
+// setTimeout(() => {
+//   typeWriter(nextScreen_p);
+// }, 3000);
+// setTimeout(() => {
+//   document.getElementById("nextScreen").style.visibility = "visible";
+// }, 3000);
 
 //SECOND SCREEN WITH EDUCATION
 let correct_ans = 0;
