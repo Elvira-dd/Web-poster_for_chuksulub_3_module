@@ -144,7 +144,7 @@
     height: 100vw;
     position: absolute;
     float: left;
-    margin-bottom: 16vh;
+    top: -47vw;
   }
   .menu_educ p {
     transform: rotate(-90deg);
@@ -156,7 +156,11 @@
     font-size: 5vw;
   }
   p {
-    font-size: 3.5vw;
+    font-size: 3vw;
+    line-height: 3.5vw;
+  }
+  button {
+    height: 5vh;
   }
   #education {
     display: flex;
@@ -169,5 +173,22 @@
     height: 100vw;
     width: 10vw;
     margin-left: 1vh;
+    border-left: 0.5vh solid #b8ec49;
+  }
+  .screen {
+    padding: 10vh 5vw 5vh 5vw;
+    height: 85vh;
+  }
+  #screen_educ_tip {
+    margin-right: 17vw;
+  }
+  #message_reload h1 {
+    font-size: 7vw;
+  }
+  #fail_screen_joke_sad_semmy {
+    width: 70%;
+  }
+  #message_reload {
+    width: 90vw;
   }
 }

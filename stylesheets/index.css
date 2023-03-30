@@ -13,12 +13,12 @@ body {
   cursor: url(../images/cursor_active.png), auto;
 }
 .screen {
-  padding: 5vh 5vw 5vh 5vw;
+  padding: 5vh 5vw;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   position: relative;
-  height: calc(100vh - 110px);
+  height: 90vh;
 }
 .screen h1 {
   text-align: center;
