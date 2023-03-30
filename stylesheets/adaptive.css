@@ -1,4 +1,9 @@
-@media all and (max-width: 1025px) and (min-width: 700px) and (orientation: portrait) {
+@media all and (max-width: 1025px) and (min-width: 740px) and (orientation: portrait) {
+  .top_img {
+    width: 70vw;
+    height: 70vw;
+    margin-left: 15vw;
+  }
   .menu_educ {
     width: 7vw;
   }
@@ -129,5 +134,39 @@
     height: auto;
     width: 80vw;
     margin-left: 0;
+  }
+}
+
+@media all and (max-width: 740px) {
+  .menu_educ {
+    transform: rotate(90deg);
+    width: 8vw;
+    height: 100vw;
+    position: absolute;
+    float: left;
+  }
+  .menu_educ p {
+    transform: rotate(-90deg);
+  }
+  h1 {
+    font-size: 10vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 3.5vw;
+  }
+  #education {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .menu_block_active_educ {
+    height: 100vw;
+    width: 10vw;
+    margin-left: 1vh;
   }
 }
