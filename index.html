@@ -216,10 +216,8 @@
         <div class="menu_block" id="screen_planet"><p>ПЛАНЕТА</p></div>
         <div class="menu_block" id="screen_group"><p>ГРУППЫ</p></div>
       </div>
-      <div class="menu_game_adaptive">
-        <div style="height: 10vw; width: 97vw; border: 1vw solid #b8ec49"></div>
-      </div>
-      <div class="screen" style="padding: 3vh 5vw 5vh 5vw">
+
+      <div class="screen">
         <div class="hidden_tool tooltip_1_1">
           <h2 id="screen_naming_2_1"></h2>
           <h1 id="screen_naming_1_2">ЗАПРОС №1</h1>
@@ -236,7 +234,7 @@
           "
         >
           <div>
-            <div>
+            <div id="adaptive_resque_text">
               <div
                 class="tip_boxes tooltip_1"
                 id="resque_screen_tip_box_1"
@@ -277,7 +275,7 @@
                   style="margin-top: 0px"
                   id="adding_file"
                 >
-                  month_temp.xls
+                  temp.xls
                 </p>
               </h2>
             </div>
@@ -792,6 +790,24 @@
             <img id="change" src="images/change_01.png" alt="" />
             <img src="images/planet_1.png" alt="" />
           </div>
+        </div>
+      </div>
+      <div class="menu_game_adaptive" style="position: relative; bottom: 2vh">
+        <div
+          style="
+            height: 10vw;
+            width: 98vw;
+            border: 1vw solid #b8ec49;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            align-items: center;
+          "
+        >
+          <h2 style="margin-top: 0vw" id="left_arrow_ad"><</h2>
+          <p style="margin-top: 0vw" id="ad_menu_text">ЗАПРОС</p>
+          <h2 style="margin-top: 0vw" id="right_arrow_ad">></h2>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-@media all and (max-width: 1025px) and (min-width: 740px) and (orientation: portrait) {
+@media all and (max-width: 1025px) and (min-width: 300px) and (orientation: portrait) {
   .top_img {
     width: 70vw;
     height: 70vw;
@@ -150,18 +150,28 @@
     transform: rotate(-90deg);
   }
   h1 {
-    font-size: 10vw;
+    font-size: 9vw;
   }
   h2 {
     font-size: 6vw;
   }
   p {
-    font-size: 4vw;
-    line-height: 4.2vw;
+    font-size: 3.6vw;
+    line-height: 4vw;
+    margin-top: 1vh;
   }
   button {
-    height: 5vh;
+    height: 6vh;
+    font-size: 3.6vw;
+    line-height: 4vw;
+    padding-left: 0;
+    width: 101%;
   }
+  button p {
+    font-size: 3.6vw;
+    line-height: 4vw;
+  }
+
   #education {
     display: flex;
     flex-direction: column;
@@ -175,8 +185,11 @@
     margin-left: 1vh;
     border-left: 0.5vh solid #b8ec49;
   }
+  #adaptive_resque_text br + h2 {
+    margin-top: -7vh;
+  }
   .screen {
-    padding: 10vh 5vw 5vh 5vw;
+    padding: 5vh 5vw 5vh 5vw;
     height: 85vh;
   }
   #screen_educ_tip {
@@ -202,5 +215,17 @@
   #semmy_loader {
     width: 70%;
     margin-top: 20vh;
+  }
+  #adaptive_resque_text h2 {
+    font-size: 5vw;
+  }
+  #game {
+    overflow: hidden;
+  }
+  .condition_text {
+    height: 60vh;
+  }
+  .disactive_ad {
+    opacity: 0.4;
   }
 }
