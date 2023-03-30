@@ -144,6 +144,7 @@
     height: 100vw;
     position: absolute;
     float: left;
+    margin-bottom: 16vh;
   }
   .menu_educ p {
     transform: rotate(-90deg);
