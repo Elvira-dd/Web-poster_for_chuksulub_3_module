@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/reset.css" />
-    <link rel="stylesheet" href="stylesheets/index.css" />
-    <link rel="stylesheet" href="stylesheets/menu.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
     <title>Обучение администратора</title>
   </head>
   <body>
@@ -67,7 +66,7 @@
     <img class="top_img" src="images/central_monitor_screen.png" alt="" />
 
     <!-- EDUCATION -->
-    <div
+    <!-- <div
       style="
         position: absolute;
         width: 100vw;
@@ -119,19 +118,7 @@
               <p id="screen_educ_text_1" style="visibility: hidden">
                 Во время работы вы можете нажать на
               </p>
-              <div
-                style="
-                  visibility: hidden;
-                  position: relative;
-                  margin-left: 2vh;
-                  margin-top: 1vh;
-                  pointer-events: none;
-                "
-                id="screen_educ_tip"
-                class="tip educ_pos"
-              >
-                ?
-              </div>
+              <div id="screen_educ_tip" class="tip educ_pos">?</div>
             </div>
 
             <p
@@ -218,7 +205,7 @@
           class="semmy_loader"
         />
       </div>
-    </div>
+    </div> -->
     <!-- GAME SCREENS -->
 
     <div id="game" style="display: block">
@@ -249,7 +236,7 @@
               <div
                 class="tip_boxes tooltip_1"
                 id="resque_screen_tip_box_1"
-                style="margin-top: 30vh; visibility: hidden"
+                style="visibility: hidden"
               >
                 <p>
                   Исходя из информации, предоставленной запросом, сделайте вывод
@@ -367,7 +354,7 @@
           <div
             id="condition_screen_tip_1"
             class="tip"
-            style="margin-left: 66vw; margin-top: -13vh"
+            style="margin-left: 75vw; margin-top: -13vh"
           >
             ?
           </div>
@@ -441,11 +428,7 @@
           </div>
         </div>
         <div class="second_part_screen" id="planet_screen">
-          <div
-            id="planet_screen_tip_1"
-            class="tip"
-            style="margin-left: 56vw; margin-top: -11vh"
-          >
+          <div id="planet_screen_tip_1" class="tip" style="margin-top: -11vh">
             ?
           </div>
           <div
@@ -460,10 +443,7 @@
             </p>
             <img src="images/close.svg" alt="" class="closing_tip" />
           </div>
-          <div
-            style="display: flex; justify-content: space-between"
-            class="hidden_tool"
-          >
+          <div style="display: flex" class="hidden_tool" id="planet_planet">
             <div class="planet_div">
               <img src="images/planet_1.png" alt="" class="planet" />
             </div>
@@ -547,19 +527,11 @@
             </div>
           </div>
           <div style="margin-top: 3vh" class="hidden_tool">
-            <div
-              style="
-                width: 100%;
-                height: 1vh;
-                border-top: 1vh dashed #b8ec49;
-                margin-top: 3vh;
-                margin-bottom: 3vh;
-              "
-            ></div>
+            <div class="line"></div>
             <h2 style="text-align: left">ПОСЛЕДНИЕ КАТАСТРОФЫ</h2>
             <p
               class="text"
-              style="width: 100%; height: 15vh; overflow: auto"
+              style="width: 100%; overflow: auto"
               id="planet_text_1"
             >
               <26.04.45> <br />
@@ -580,12 +552,7 @@
             </p>
             <p
               class="text"
-              style="
-                width: 100%;
-                height: 15vh;
-                overflow: auto;
-                visibility: hidden;
-              "
+              style="width: 100%; overflow: auto; visibility: hidden"
               id="planet_text_2"
             >
               <12.03.45> <br />
@@ -604,13 +571,7 @@
         </div>
         <div class="second_part_screen" id="group_screen">
           <div style="display: flex; justify-content: space-between">
-            <div
-              id="group_screen_tip_1"
-              class="tip"
-              style="margin-left: 50vw; margin-top: -14vh"
-            >
-              ?
-            </div>
+            <div id="group_screen_tip_1" class="tip">?</div>
             <div
               class="tip_boxes tooltip_1"
               id="group_screen_tip_box_1"
@@ -726,15 +687,7 @@
                 <p id="gum_fire_count">х3</p>
               </button>
             </div>
-            <div
-              style="
-                width: 40%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-right: 3%;
-              "
-            >
+            <div id="group_screen_img_div">
               <img
                 src="images/group_safety.png"
                 alt=""
@@ -745,15 +698,7 @@
             </div>
           </div>
           <div id="groups_text" style="visibility: hidden" class="hidden_tool">
-            <div
-              style="
-                width: 100%;
-                height: 1vh;
-                border-top: 1vh dashed #b8ec49;
-                margin-top: 3vh;
-                margin-bottom: 3vh;
-              "
-            ></div>
+            <div class="line"></div>
             <div style="display: flex">
               <h2 id="group_text_name_prev" style="opacity: 0.4"><</h2>
               <h2
@@ -793,15 +738,7 @@
             </div>
           </div>
           <div id="boxes_text" style="visibility: hidden" class="hidden_tool">
-            <div
-              style="
-                width: 100%;
-                height: 1vh;
-                border-top: 1vh dashed #b8ec49;
-                margin-top: 3vh;
-                margin-bottom: 3vh;
-              "
-            ></div>
+            <div class="line"></div>
             <h2 id="boxes_text_1">Базовая гуманитарная помощь</h2>
             <div class="text" style="width: 100%; height: 15vh; overflow: auto">
               <br />
@@ -846,22 +783,9 @@
               >Закончить обучение
             </button>
           </div>
-          <div
-            class="obrabotka_div"
-            style="
-              display: flex;
-              flex-direction: row;
-              justify-content: space-evenly;
-              align-items: center;
-            "
-          >
+          <div class="obrabotka_div">
             <img src="images/boxes.png" alt="" id="obrabotka_img" />
-            <img
-              id="change"
-              style="height: 14vh; margin-top: -14vh"
-              src="images/change_01.png"
-              alt=""
-            />
+            <img id="change" src="images/change_01.png" alt="" />
             <img src="images/planet_1.png" alt="" />
           </div>
         </div>

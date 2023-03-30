@@ -1,24 +1,24 @@
 //FIRST SCREEN WITH EDUCATION
 
-typeWriter(screen_naming_educ);
-setTimeout(() => {
-  typeWriter(screen_naming_educ_2);
-}, 500);
-setTimeout(() => {
-  typeWriter(screen_naming_educ_3);
-}, 1000);
-setTimeout(() => {
-  typeWriter(screen_educ_login_1);
-}, 1500);
-setTimeout(() => {
-  imageAppear(user_name);
-}, 2000);
-setTimeout(() => {
-  typeWriter(nextScreen_p);
-}, 3000);
-setTimeout(() => {
-  document.getElementById("nextScreen").style.visibility = "visible";
-}, 3000);
+// typeWriter(screen_naming_educ);
+// setTimeout(() => {
+//   typeWriter(screen_naming_educ_2);
+// }, 500);
+// setTimeout(() => {
+//   typeWriter(screen_naming_educ_3);
+// }, 1000);
+// setTimeout(() => {
+//   typeWriter(screen_educ_login_1);
+// }, 1500);
+// setTimeout(() => {
+//   imageAppear(user_name);
+// }, 2000);
+// setTimeout(() => {
+//   typeWriter(nextScreen_p);
+// }, 3000);
+// setTimeout(() => {
+//   document.getElementById("nextScreen").style.visibility = "visible";
+// }, 3000);
 
 //SECOND SCREEN WITH EDUCATION
 let correct_ans = 0;
@@ -137,7 +137,7 @@ function imageAppear(image) {
 //THIRD SCREEN WITH EDUCATION | YES | LOADER
 
 $("#screen_educ_buttonYes").click(function () {
-  $(".screen").css("position", "absolute");
+  $(".screen").css("display", "none");
   $(".menu_game").css("visibility", "hidden");
   document.getElementById("screen_educ_buttonNo").style.display = "none";
   document.getElementById("screen_educ_buttonYes").style.display = "none";
@@ -182,6 +182,7 @@ $("#screen_educ_buttonYes").click(function () {
   setTimeout(() => {
     $("#game").css("display", "block");
     $(".screen").css("position", "relative");
+    $(".screen").css("display", "flex");
     $("#screen_naming_1_2").css("visibility", "visible");
     $(".menu_game").css("visibility", "visible");
     $("#education").css("display", "none");

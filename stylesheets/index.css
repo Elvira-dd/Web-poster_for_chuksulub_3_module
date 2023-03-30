@@ -1,6 +1,3 @@
-@import "font.css";
-@import "education_screen.css";
-@import "game.css";
 ::selection {
   background: #b8ec49;
   color: #021a0c;
@@ -83,17 +80,20 @@ button p {
 }
 ::placeholder {
   color: #6a922f;
+  font-size: 2.4vh;
+  line-height: 2.6vh;
+  margin-top: 1vh;
 }
 input[type="text"] {
   visibility: hidden;
   width: calc(100% - 30px);
-  height: 52px;
+  height: 5vh;
   border: 6px solid #b8ec49;
   background-color: #1c3816;
   margin-top: 1.5vh;
   font-size: 22px;
   font-family: "Press Start 2P", cursive;
-  padding-left: 20px;
+  padding-left: 2vh;
   color: #b8ec49;
   animation: longer_input;
   animation-duration: 2s;
@@ -152,4 +152,61 @@ input[type="text"]:focus {
 }
 .tip_boxes p {
   margin-top: 0px;
+}
+#screen_educ_tip {
+  visibility: hidden;
+  position: relative;
+  margin-left: 2vh;
+  margin-top: 1vh;
+  pointer-events: none;
+}
+#resque_screen_tip_box_1 {
+  margin-top: 30vh;
+}
+#planet_planet {
+  justify-content: space-between;
+}
+#planet_text_1 {
+  height: 15vh;
+}
+#planet_text_2 {
+  height: 15vh;
+}
+.line {
+  width: 100%;
+  height: 1vh;
+  border-top: 1vh dashed #b8ec49;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+#planet_screen_tip_1 {
+  margin-left: 60vw;
+}
+#group_screen_img_div {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3%;
+}
+.obrabotka_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#change {
+  height: 10vh;
+  margin-top: -14vh;
+}
+#congrant_img {
+  height: auto;
+  width: 40vw;
+  margin-left: 23vw;
+  visibility: visible;
+  margin-top: 2vh;
+}
+#group_screen_tip_1 {
+  margin-left: 70vw;
+  margin-top: -13vh;
 }

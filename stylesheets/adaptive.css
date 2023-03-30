@@ -1,0 +1,133 @@
+@media all and (max-width: 1025px) and (min-width: 700px) and (orientation: portrait) {
+  .menu_educ {
+    width: 7vw;
+  }
+  .menu_block_active_educ {
+    width: 6.5vw;
+    height: 30vh;
+  }
+  p {
+    font-size: 1.8vh;
+    line-height: 2vh;
+  }
+  .screen {
+    padding: 5vh 7vw 5vh 7vw;
+  }
+  h1 {
+    font-size: 4.6vh;
+  }
+  h2 {
+    font-size: 2.6vh;
+  }
+  #screen_educ_tip {
+    margin-left: -5vh;
+    margin-top: 1vh;
+    margin-right: 22vw;
+    width: 7vw;
+    height: 4vw;
+  }
+  .semmy_loader {
+    width: 70%;
+    margin-top: 7vh;
+  }
+  .fail_screen_joke_sad_semmy {
+    width: 70%;
+  }
+  /*  */
+  /*  */
+
+  .menu_game {
+    width: 6vw;
+  }
+  .menu_block {
+    width: 6.5vw;
+  }
+  button {
+    font-size: 1.8vh;
+    line-height: 2vh;
+    height: 6vh;
+  }
+  .tip_boxes {
+    width: calc(100% - 20vw);
+  }
+  #resque_screen_tip_box_1 {
+    margin-top: 42vh;
+  }
+  #resque_screen_tip_2 {
+    margin-left: 0;
+    margin-bottom: -4vw;
+  }
+  .condition_text {
+    width: 35vw;
+  }
+  .tip_boxes img {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+  #planet_planet {
+    flex-direction: column;
+  }
+  .planet_div {
+    width: 100%;
+  }
+  .planet {
+    height: 30vh;
+  }
+  .planet_tablet_div {
+    width: 100%;
+  }
+  .planet_tablet {
+    height: 6.5vh;
+  }
+  #planet_text_1 {
+    height: 9vh;
+  }
+  #planet_text_2 {
+    height: 9vh;
+  }
+  .line {
+    border-top: 0.7vh dashed #b8ec49;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  #planet_screen_tip_1 {
+    margin-left: 70vw;
+  }
+  #group_screen_img_div {
+    display: none;
+    width: 0px;
+  }
+  .groups_buttons {
+    width: 100%;
+  }
+  .group_button {
+    height: 6vh;
+  }
+  #group_screen_tip_1 {
+    margin-left: 70vw;
+    margin-top: -18vh;
+  }
+  .obrabotka_div img {
+    width: auto;
+    height: 23vh;
+  }
+  .obrabotka_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: space-between;
+    margin-top: -15vh;
+  }
+  #change {
+    transform: rotate(90deg);
+    height: 5vh;
+    margin-left: 45vw;
+    margin-top: 0px;
+  }
+  #congrant_img {
+    height: auto;
+    width: 80vw;
+    margin-left: 0;
+  }
+}
