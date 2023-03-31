@@ -8,6 +8,8 @@ $("#obrabotka_button").click(function () {
   $("#screen_naming_2_3").css("visibility", "visible");
   $(".menu_block").css("pointer-events", "visible");
   $(".menu_block").css("opacity", "1");
+  $(".menu_game_adaptive").css("pointer-events", "visible");
+  $(".menu_game_adaptive").css("opacity", "1");
   $("#resque_screen").css("display", "flex");
   $("#resque_screen").css("visibility", "visible");
   $("#adding_file").text("нет");

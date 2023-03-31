@@ -13,7 +13,7 @@ body {
   cursor: url(../images/cursor_active.png), auto;
 }
 .screen {
-  padding: 5vh 5vw;
+  padding: 5vh 5vw 5vh 5vw;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -23,6 +23,7 @@ body {
 .screen h1 {
   text-align: center;
 }
+
 h1 + h2 {
   text-align: center;
 }
@@ -86,9 +87,9 @@ button p {
 }
 input[type="text"] {
   visibility: hidden;
-  width: calc(100% - 30px);
+  width: 86vw;
   height: 5vh;
-  border: 6px solid #b8ec49;
+  border: 0.6vh solid #b8ec49;
   background-color: #1c3816;
   margin-top: 1.5vh;
   font-size: 22px;
@@ -203,10 +204,55 @@ input[type="text"]:focus {
   height: auto;
   width: 40vw;
   margin-left: 23vw;
-  visibility: visible;
+  visibility: hidden;
   margin-top: 2vh;
 }
 #group_screen_tip_1 {
   margin-left: 70vw;
   margin-top: -13vh;
+}
+#resque_screen_tip_1 {
+  margin-left: 46vh;
+  margin-top: -5vh;
+}
+#planet_screen_tip_1 {
+  margin-top: -11vh;
+}
+.unactive_group_button {
+  margin-bottom: 25px;
+}
+#groups_buttons_selector_vol {
+  border: 0px;
+  background-color: #93c23d;
+  padding-left: 0px;
+  border: 6px solid #93c23d;
+}
+#group_main_text {
+  width: 97%;
+  margin-left: 3%;
+  height: 15vh;
+  overflow: auto;
+}
+.text {
+  width: 100%;
+  overflow: auto;
+}
+#congrant_img {
+  height: auto;
+  width: 40vw;
+  margin-left: 23vw;
+  visibility: hidden;
+  margin-top: 2vh;
+}
+#group_button_volun {
+  pointer-events: none;
+}
+#nextScreen_p {
+  width: 83vw;
+}
+#boxes_main_text {
+  width: 100%;
+  margin-left: 0;
+  height: 15vh;
+  overflow: auto;
 }

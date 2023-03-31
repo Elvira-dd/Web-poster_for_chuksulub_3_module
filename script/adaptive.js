@@ -1,4 +1,5 @@
 let GetWidth = $(window).width();
+console.log(GetWidth);
 let ad_count = 2;
 if (GetWidth < 740) {
   $("#screen_educ_buttonNo").click(function () {
@@ -13,7 +14,16 @@ if (GetWidth < 740) {
     }, 10000);
   });
   $(".menu_game").css({ display: "none", position: "absolute" });
-  $(".menu_game_adaptive").css({ display: "block" });
+  $(".menu_game_adaptive").css({ display: "none" });
+  $("#finish_button").click(function () {
+    $(".menu_block").css({ display: "none" });
+    $(".menu_educ").css({ display: "none" });
+  });
+  $("#screen_educ_buttonYes").click(function () {
+    setTimeout(() => {
+      $(".menu_game_adaptive").css({ display: "block" });
+    }, 8000);
+  });
 }
 $("#left_arrow_ad").click(function () {
   switch (ad_count) {

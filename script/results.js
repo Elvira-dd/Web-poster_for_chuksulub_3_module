@@ -1,5 +1,6 @@
 $("#finish_button").click(function () {
   $(".menu_block").css({ "pointer-events": "all", opacity: "1" });
+  $(".menu_educ").css("margin-top", "0");
   $("#result").css({ display: "block", visibility: "visible" });
   $("#game").css({ display: "none", visibility: "hidden" });
   $("#screen_results").css({ display: "block", visibility: "visible" });

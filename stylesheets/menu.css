@@ -3,6 +3,7 @@
   width: 4vw;
   height: 100vh;
   float: right;
+  margin-top: -100vh;
   border-right: 6px solid #b8ec49;
 }
 .menu_game {

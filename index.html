@@ -66,7 +66,7 @@
     <img class="top_img" src="images/central_monitor_screen.png" alt="" />
 
     <!-- EDUCATION -->
-    <!-- <div
+    <div
       style="
         position: absolute;
         width: 100vw;
@@ -78,12 +78,7 @@
       id="change_screen"
     ></div>
     <div id="education">
-      <div class="menu_educ">
-        <div class="menu_block_active_educ" id="menu_block_active_educ">
-          <p>ОБУЧЕНИЕ</p>
-        </div>
-      </div>
-      <div class="screen" id="education_screen">
+      <div class="screen" id="education_screen" style="padding-right: 7vw">
         <div id="education_full">
           <div class="screen_naming_in_educ">
             <h1 id="screen_naming_educ" style="visibility: hidden">
@@ -111,7 +106,7 @@
             </button>
           </div>
 
-          <div id="screen_educ_2">
+          <div id="screen_educ_2" style="padding-right: 3vw">
             <div id="second_educ_screen"></div>
             <br />
             <br />
@@ -197,7 +192,11 @@
           </button>
         </div>
       </div>
-
+      <div class="menu_educ">
+        <div class="menu_block_active_educ" id="menu_block_active_educ">
+          <p>ОБУЧЕНИЕ</p>
+        </div>
+      </div>
       <div class="preloader_full">
         <img
           src="images/loading_semmy_1.png"
@@ -206,7 +205,7 @@
           class="semmy_loader"
         />
       </div>
-    </div> -->
+    </div>
     <!-- GAME SCREENS -->
 
     <div id="game" style="display: block">
@@ -247,20 +246,16 @@
                 <img src="images/close.svg" alt="" class="closing_tip" />
               </div>
               <h2 class="tooltip_1 hidden_tool">ТЕКСТ ОБРАЩЕНИЯ</h2>
-              <div
-                id="resque_screen_tip_1"
-                class="tip hidden_tool tooltip_1"
-                style="margin-left: 46vh; margin-top: -5vh"
-              >
+              <div id="resque_screen_tip_1" class="tip hidden_tool tooltip_1">
                 ?
               </div>
               <p class="tooltip_1 hidden_tool" id="resque_text">
                 Здравствуйте, просим вас прислать дополнительную зимнюю
-                гуманитарную помощь в 7 район. За последнюю неделю средняя
-                дневная температура опустилась ниже -10 градусов. Также
-                направили записи о нестабильных изменениях температуры в
-                исследовательский центр, так как центра безопасности планет у
-                нас нет
+                гуманитарную помощь в&nbsp;7&nbsp;район. За&nbsp;последнюю
+                неделю средняя дневная температура опустилась ниже
+                &minus;10&nbsp;градусов. Также направили записи
+                о&nbsp;нестабильных изменениях температуры в исследовательский
+                центр, так как центра безопасности планет у нас нет
               </p>
               <br />
               <br />
@@ -430,9 +425,7 @@
           </div>
         </div>
         <div class="second_part_screen" id="planet_screen">
-          <div id="planet_screen_tip_1" class="tip" style="margin-top: -11vh">
-            ?
-          </div>
+          <div id="planet_screen_tip_1" class="tip">?</div>
           <div
             class="tip_boxes tooltip_1"
             id="planet_screen_tip_box_1"
@@ -531,11 +524,7 @@
           <div style="margin-top: 3vh" class="hidden_tool">
             <div class="line"></div>
             <h2 style="text-align: left">ПОСЛЕДНИЕ КАТАСТРОФЫ</h2>
-            <p
-              class="text"
-              style="width: 100%; overflow: auto"
-              id="planet_text_1"
-            >
+            <p class="text" id="planet_text_1">
               <26.04.45> <br />
               Землетрясение в трех центральных районах
               <br />
@@ -608,24 +597,16 @@
                 <p>х2</p>
               </button>
 
-              <div style="margin-bottom: 25px">
+              <div class="unactive_group_button">
                 <button
                   type="button"
                   class="group_button"
-                  style="
-                    border: 0px;
-                    background-color: #021a0c;
-                    padding-left: 26px;
-                  "
+                  id="group_button_volun"
                 >
                   <div style="display: flex; align-items: center">
                     <div
                       class="groups_buttons_selector"
-                      id="groups_buttons_selector"
-                      style="
-                        background-color: #93c23d;
-                        border: 6px solid #93c23d;
-                      "
+                      id="groups_buttons_selector_vol"
                     ></div>
                     <p style="color: #93c23d">Группа волонтеров</p>
                   </div>
@@ -651,7 +632,7 @@
                     class="groups_buttons_selector"
                     id="groups_buttons_selector_4"
                   ></div>
-                  <p>Группа временной эвакуации</p>
+                  <p>Группа эвакуации</p>
                 </div>
                 <p>х1</p>
               </button>
@@ -711,11 +692,7 @@
               </h2>
               <h2 id="group_text_name_next">></h2>
             </div>
-            <div
-              class="text"
-              style="width: 97%; margin-left: 3%; height: 15vh; overflow: auto"
-              id="group_main_text"
-            >
+            <div class="text" id="group_main_text">
               <p id="group_main_text_1">
                 Состав: Анджена (678_АЛ),Верон (8009_АН), Принал (453_АП),Ян
                 (7764_АА)
@@ -742,7 +719,7 @@
           <div id="boxes_text" style="visibility: hidden" class="hidden_tool">
             <div class="line"></div>
             <h2 id="boxes_text_1">Базовая гуманитарная помощь</h2>
-            <div class="text" style="width: 100%; height: 15vh; overflow: auto">
+            <div class="text" id="boxes_main_text">
               <br />
               <br />
               <p id="boxes_text_3">
@@ -792,7 +769,10 @@
           </div>
         </div>
       </div>
-      <div class="menu_game_adaptive" style="position: relative; bottom: 2vh">
+      <div
+        class="menu_game_adaptive"
+        style="position: relative; bottom: 2vh; display: none"
+      >
         <div
           style="
             height: 10vw;
@@ -837,18 +817,7 @@
           </h2>
           <h1 style="margin-top: 10vh; visibility: hidden" id="result_3"></h1>
           <h2 id="result_4" style="visibility: hidden">правильных ответов</h2>
-          <img
-            src="images/congrant_semmy.png"
-            alt=""
-            style="
-              height: auto;
-              width: 40vw;
-              margin-left: 23vw;
-              visibility: hidden;
-              margin-top: 2vh;
-            "
-            id="congrant_img"
-          />
+          <img src="images/congrant_semmy.png" alt="" id="congrant_img" />
         </div>
         <div id="screen_errors" style="display: none; visibility: hidden">
           <h1>ОШИБКИ</h1>

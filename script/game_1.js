@@ -230,7 +230,7 @@ $("#evoq_group_button").click(function () {
   $("#groups_buttons_selector_4").addClass("active_selector");
   $("#groups_text").css("visibility", "visible");
   $("#boxes_text").css("visibility", "hidden");
-  $("#group_text_name").text("Группа временной эвакуации №44");
+  $("#group_text_name").text("Группа эвакуации №44");
   $("#group_main_text_1").text(
     `Состав: Ливера(55_АЛ), Ричард(02_АО), Перер(991_АО), Екатерина (98_ЛЛ), 5 волонтеров`
   );
@@ -327,14 +327,20 @@ $(".resque_button_next").click(function () {
 });
 $("#resque_button_help_usuall").click(function () {
   $("#gum_base_count").text("х6");
+  $(".menu_game_adaptive").css("pointer-events", "none");
+  $(".menu_game_adaptive").css("opacity", ".4");
 });
 $("#resque_button_help_winter").click(function () {
   $("#gum_winter_count").text("х1");
+  $(".menu_game_adaptive").css("pointer-events", "none");
+  $(".menu_game_adaptive").css("opacity", ".4");
   correct_ans = 1;
   ans_1 = 1;
 });
 $("#resque_button_help_hot").click(function () {
   $("#gum_fire_count").text("х2");
+  $(".menu_game_adaptive").css("pointer-events", "none");
+  $(".menu_game_adaptive").css("opacity", ".4");
 });
 //
 $("#resque_button_help_return").click(function () {
@@ -357,12 +363,16 @@ $("#resque_button_help_return").click(function () {
     "Запрос перенаправлен в основной административный центр"
   );
   $(".menu_block").css("pointer-events", "none");
+  $(".menu_game_adaptive").css("pointer-events", "none");
+  $(".menu_game_adaptive").css("opacity", ".4");
   $(".menu_block").css("opacity", ".4");
   $(".obrabotka_div").css("visibility", "hidden");
 });
 //
 $("#resque_button_help_cancel").click(function () {
   obrabotka();
+  $(".menu_game_adaptive").css("pointer-events", "none");
+  $(".menu_game_adaptive").css("opacity", ".4");
   setTimeout(function () {
     $("#obrabotka_button").css("visibility", "visible");
   }, 4000);

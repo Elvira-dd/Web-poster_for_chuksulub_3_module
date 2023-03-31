@@ -1,24 +1,24 @@
 //FIRST SCREEN WITH EDUCATION
 
-// typeWriter(screen_naming_educ);
-// setTimeout(() => {
-//   typeWriter(screen_naming_educ_2);
-// }, 500);
-// setTimeout(() => {
-//   typeWriter(screen_naming_educ_3);
-// }, 1000);
-// setTimeout(() => {
-//   typeWriter(screen_educ_login_1);
-// }, 1500);
-// setTimeout(() => {
-//   imageAppear(user_name);
-// }, 2000);
-// setTimeout(() => {
-//   typeWriter(nextScreen_p);
-// }, 3000);
-// setTimeout(() => {
-//   document.getElementById("nextScreen").style.visibility = "visible";
-// }, 3000);
+typeWriter(screen_naming_educ);
+setTimeout(() => {
+  typeWriter(screen_naming_educ_2);
+}, 500);
+setTimeout(() => {
+  typeWriter(screen_naming_educ_3);
+}, 1000);
+setTimeout(() => {
+  typeWriter(screen_educ_login_1);
+}, 1500);
+setTimeout(() => {
+  imageAppear(user_name);
+}, 2000);
+setTimeout(() => {
+  typeWriter(nextScreen_p);
+}, 3000);
+setTimeout(() => {
+  document.getElementById("nextScreen").style.visibility = "visible";
+}, 3000);
 
 //SECOND SCREEN WITH EDUCATION
 let correct_ans = 0;
@@ -48,37 +48,37 @@ $("#nextScreen").click(function () {
   typeWriter(elementEl);
   setTimeout(() => {
     typeWriter(screen_educ_text_1);
-  }, 8000);
+  }, 6500);
   setTimeout(() => {
     typeWriter(screen_educ_text_2);
-  }, 10000);
+  }, 8500);
   setTimeout(() => {
     document.getElementById("screen_educ_tip").style.visibility = "visible";
-  }, 10500);
+  }, 8500);
   setTimeout(() => {
     typeWriter(screen_educ_text_3);
-  }, 12500);
+  }, 10500);
   setTimeout(() => {
     document.getElementById("screen_educ_buttonYes").style.visibility =
       "visible";
-  }, 13000);
+  }, 11000);
   setTimeout(() => {
     typeWriter(screen_educ_buttonYes_p);
-  }, 13000);
+  }, 11000);
   setTimeout(() => {
     document.getElementById("screen_educ_buttonNo").style.visibility =
       "visible";
-  }, 13500);
+  }, 11500);
   setTimeout(() => {
     typeWriter(screen_educ_buttonNo_p);
-  }, 13500);
+  }, 11500);
 });
 function typeWriter(el) {
   el.style.visibility = "visible";
   const textArray = el.innerHTML.split("");
   el.innerHTML = "";
   textArray.forEach((letter, i) =>
-    setTimeout(() => (el.innerHTML += letter), 50 * i)
+    setTimeout(() => (el.innerHTML += letter), 40 * i)
   );
 }
 
@@ -96,16 +96,16 @@ $("#screen_educ_buttonNo").click(function () {
     document.getElementById("screen_educ_2").style.display = "none";
     document.getElementById("screen_educ_2").style.visibility = "hidden";
     typeWriter(fail_screen_joke_text_1);
-  }, 9000);
+  }, 7000);
   setTimeout(() => {
     typeWriter(fail_screen_joke_2);
-  }, 9500);
+  }, 7500);
   setTimeout(() => {
     typeWriter(fail_screen_joke_3);
-  }, 10500);
+  }, 9500);
   setTimeout(() => {
     typeWriter(fail_screen_joke_4);
-  }, 11000);
+  }, 10000);
   setTimeout(() => {
     imageAppear(fail_screen_joke_sad_semmy);
   }, 11000);
